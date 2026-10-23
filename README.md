@@ -1,4 +1,4 @@
-# Kirti & Jeetu Wedding Invitation
+# Wedding Invitation
 
 Run the existing invitation locally on Windows:
 
