@@ -790,7 +790,12 @@ function WeddingInvitation() {
 }
 
 function App() {
-  return <WeddingInvitation/>;
+  return (
+    <>
+      <WeddingInvitation/>
+      <Analytics />
+    </>
+  );
 }
 
 createRoot(document.getElementById('root')).render(<App/>);
