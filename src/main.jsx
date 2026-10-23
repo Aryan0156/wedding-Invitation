@@ -2,6 +2,7 @@ import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowDown, ArrowUpRight, CalendarDays, Heart, MapPin, Share2, Smartphone, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
+import { Analytics } from '@vercel/analytics/react';
 import { wedding } from './config/wedding.js';
 import './style.css';
 import './wedding-extras.css';
@@ -663,6 +664,7 @@ function WeddingInvitation() {
   const topDate = wedding.dateLabel;
   const compactDate = wedding.weddingDate.slice(0, 10).split('-').reverse().join(' · ');
   return <>
+    <Analytics />
     <audio ref={audioRef} src={wedding.musicUrl} autoPlay loop preload="auto" />
       <section className={`cover ${opened ? 'cover-open' : ''}`} id="top" aria-label="Wedding invitation welcome">
       <img className="cover-ganesha cover-ganesha-left" src="/images/ganesha-line-art-transparent.png" alt="" aria-hidden="true" />
@@ -792,3 +794,4 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(<App/>);
+
