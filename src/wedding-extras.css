@@ -1,0 +1,1978 @@
+.cover-arch{min-height:700px;padding-top:78px}
+.cover-names{margin:27px 0 23px}
+.cover-rule{margin:27px auto 13px}
+.guest-entry{position:relative;z-index:2;width:min(100%,330px);display:flex;flex-direction:column;align-items:center}
+.guest-entry h2{font:500 25px/1.08 var(--serif);color:var(--ivory);margin:0 0 8px}
+.guest-entry>p:not(.guest-name-preview):not(.guest-name-error){font:14px/1.45 var(--serif);color:#e8d8b5c9;margin:0 0 16px}
+.guest-entry input{width:100%;min-height:44px;text-align:center;background:#31040d80;border:1px solid #d4af6580;color:var(--ivory);padding:11px 14px;font:14px var(--serif);letter-spacing:.04em}
+.guest-entry input::placeholder{color:#e8d8b599}
+.guest-entry input[aria-invalid="true"]{border-color:#f3a5a5}
+.guest-entry .gold-button{margin-top:13px}
+.guest-name-preview,.guest-name-error{font:13px/1.45 var(--serif);margin:10px 0 0;color:var(--gold)}
+.guest-name-error{color:#ffd3d3}
+.cover-flower{bottom:16px}
+.cover-butterfly{position:absolute;z-index:1;width:37px;pointer-events:none}
+.butterfly-one{left:7%;top:40%;color:#e8d8b5}
+.butterfly-two{right:7%;top:53%;color:#d4af65}
+.butterfly{overflow:visible;pointer-events:none}
+.butterfly-wings{transform-box:fill-box;transform-origin:center;animation:wing-flutter .48s ease-in-out infinite alternate}
+.cover-butterfly,.section-butterfly{animation:butterfly-drift 8s ease-in-out infinite}
+.section-butterfly{position:absolute;width:42px;z-index:0;color:#a87c4d7a}
+.welcome-butterfly{left:7%;top:24%}
+.story-butterfly{right:9%;top:20%;color:#8f1c366b}
+.family-butterfly{left:7%;bottom:14%;color:#e8d8b58c}
+.gallery-butterfly{right:4%;top:6%;color:#d4af65}
+.shagun-butterfly{right:8%;top:13%;color:#8f1c3680}
+.music-toggle{max-width:180px}
+.music-toggle:disabled{opacity:1;cursor:default}
+.edit-name{border:0;background:none;color:#a67d45;text-decoration:underline;text-underline-offset:3px;font-size:10px;letter-spacing:.04em;cursor:pointer;margin:-5px 0 9px}
+.family-welcome{max-width:650px;margin:0 auto 35px;font:18px/1.65 var(--serif);color:#fff8ecc9}
+.family-grid.family-only{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;max-width:980px;margin:0 auto}
+.family-card{min-height:166px;border:1px solid #d4af6580;background:#570b1c70;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:20px 12px}
+.family-flower{font-size:20px;color:var(--gold)}
+.family-grid.family-only h3{font:500 24px/1.1 var(--serif);color:var(--ivory);margin:12px 0 7px}
+.family-grid.family-only p{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#e8d8b5c9;margin:0}
+.event-details{display:flex;flex-direction:column;gap:4px}
+.event-card>a{align-items:center}
+.event-0 .event-icon{color:#b18a43}
+.event-1 .event-icon{color:#5c7751}
+.event-2 .event-icon{color:#8e4e72}
+.event-4 .event-details{font:italic 15px var(--serif);color:#795e51}
+.couple-art-wrap{position:relative;max-width:560px;margin:38px auto 0;padding:14px 20px 3px;text-align:center}
+.couple-illustration{width:min(100%,320px);height:auto;overflow:visible}
+.bride-character{transform-box:fill-box;transform-origin:bottom center;animation:character-bob 3.6s ease-in-out infinite}
+.groom-character{transform-box:fill-box;transform-origin:bottom center;animation:character-bob 4s ease-in-out -.7s infinite}
+.couple-heart{transform-box:fill-box;transform-origin:center;animation:heart-glow 2s ease-in-out infinite}
+.couple-art-wrap .muted{margin:0;color:#795e51}
+.shagun{background:#f3e9d6;color:var(--maroon);text-align:center;padding-top:96px;padding-bottom:62px;overflow:hidden}
+.shagun#shagun{position:relative}
+.shagun .section-kicker{border-color:#4a071522}
+.shagun .eyebrow{color:#9c7540}
+.shagun h2{color:var(--maroon);font:500 clamp(43px,6vw,60px)/.96 var(--serif)}
+.shagun-copy{max-width:600px;margin:0 auto 30px;font:17px/1.6 var(--serif);color:#6f5751}
+.shagun-content{width:min(100%,900px);margin:0 auto}
+.shagun-lakshmi-art{display:block;width:min(68vw,200px);height:auto;margin:-12px auto 12px;filter:drop-shadow(0 10px 14px #9b681b66) drop-shadow(0 0 22px #d8ad554d)}
+.shagun-return{margin:28px auto 0}
+.shagun-card{position:relative;z-index:1;width:min(100%,500px);max-width:470px;margin:auto;padding:26px;background:#fffdf8;border:1px solid #d4af657a;box-shadow:0 12px 35px #4a071512;text-align:left}
+.shagun-card.has-qr{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,280px);gap:22px;align-items:start;width:min(100%,760px);max-width:760px}
+.shagun-card.has-qr .payment-qr{grid-column:2;grid-row:1;align-self:start}
+.shagun-card.has-qr .payment-qr{padding-top:29px}
+.shagun-entry>label{display:block;font-size:11px;letter-spacing:.08em;color:#5b4038;margin:0 0 9px}
+.amount-field{display:flex;align-items:center;border:1px solid #c5a56b;background:#fff;color:var(--maroon)}
+.amount-field>span{padding-left:14px;color:#97733e;font:22px var(--serif)}
+.amount-field input{width:100%;min-width:0;border:0;background:transparent;padding:13px 12px;color:#4a0715;font-size:15px;outline:none}
+.amount-field:focus-within{outline:2px solid #d4af65;outline-offset:2px}
+.shagun-entry>small{display:block;margin-top:8px;color:#927c68;font-size:9px;line-height:1.5}
+.amount-error{margin:10px 0 0;color:#9f2f3d;font-size:11px;line-height:1.5}
+.amount-display{font-size:12px;color:#6f5751}
+.amount-display strong{color:var(--maroon);font-size:17px}
+.qr-frame{display:grid;place-items:center;width:min(100%,280px);margin:12px auto 15px;padding:10px;background:#fff;border:1px solid #d4af65;box-shadow:0 7px 18px #4a071512}
+.payment-qr .qr-frame{margin:0 auto}
+.qr-frame svg{display:block;width:100%;height:auto;max-width:260px;shape-rendering:crispEdges}
+.upi-readable{font-size:12px;color:#6f5751}
+.upi-readable strong{color:var(--maroon);letter-spacing:.03em}
+.scan-instruction{max-width:330px;margin:10px auto 15px;font:15px/1.5 var(--serif);color:#795e51}
+.upi-open{width:100%;text-align:center}
+.payment-disclaimer{margin:13px 0 0;color:#927c68;font-size:9px;line-height:1.5}
+@keyframes wing-flutter{from{transform:scaleX(.68)}to{transform:scaleX(1)}}
+@keyframes butterfly-drift{0%,100%{translate:0 0;rotate:-5deg}50%{translate:13px -15px;rotate:7deg}}
+@keyframes character-bob{0%,100%{translate:0 0}50%{translate:0 -4px}}
+@keyframes heart-glow{0%,100%{transform:scale(.9);opacity:.7}50%{transform:scale(1.12);opacity:1}}
+@media(max-width:760px){
+  .cover-arch{min-height:690px;width:min(92vw,430px);padding:75px 22px 50px}
+  .cover-names{font-size:58px}
+  .cover-rule{margin:22px auto 13px}
+  .guest-entry{width:min(100%,310px)}
+  .guest-entry h2{font-size:23px}
+  .cover-butterfly{width:29px}
+  .butterfly-one{left:3%;top:42%}.butterfly-two{right:3%;top:56%}
+  .welcome-butterfly{left:4%;top:16%;width:30px}
+  .story-butterfly{right:5%;top:12%;width:30px}
+  .family-grid.family-only{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .family-card{min-height:138px;padding:17px 8px}
+  .family-card:last-child{grid-column:1/-1}
+  .site-nav{height:auto;min-height:61px;flex-wrap:wrap;padding:7px 18px 0;gap:0}
+  .site-nav nav{order:3;display:flex;flex:0 0 100%;overflow-x:auto;white-space:nowrap;padding:10px 0 9px;gap:20px;scrollbar-width:none}
+  .site-nav nav::-webkit-scrollbar{display:none}
+  .site-nav nav a{font-size:9px}
+  .nav-date{margin-right:46px}
+  .family-grid.family-only h3{font-size:22px}
+  .family-welcome{font-size:17px}
+  .couple-art-wrap{margin-top:27px;padding-left:0;padding-right:0}
+  .couple-illustration{width:min(92%,300px)}
+  .shagun{padding:75px 6% 48px}
+  .shagun-lakshmi-art{width:min(76vw,120px)}
+  .shagun-card{padding:20px 16px}
+  .shagun-card.has-qr{display:block;width:min(100%,500px)}
+  .shagun-card.has-qr .payment-qr{margin-top:20px;padding-top:0}
+  .shagun-butterfly{right:3%;top:10%;width:30px}
+  .developer-credit{font-size:21px;margin-top:40px}
+}
+@media(prefers-reduced-motion:reduce){
+  .butterfly,.butterfly-wings,.bride-character,.groom-character,.couple-heart{animation:none!important}
+  .events-arch-butterfly{animation:none!important}
+  .events-arch-flower{animation:none!important}
+}
+
+/* Keep the welcome details in the document flow so the date and illustration never overlap. */
+.welcome-couple-art{position:relative;left:auto;bottom:auto;width:210px;height:116px;margin:12px auto 14px;translate:none;opacity:.94}
+.welcome-couple-art .couple-illustration{width:190px}
+.welcome-art-butterfly{right:-6px;top:12px}
+
+/* Balance the opening arch with transparent Ganesha line art on both sides. */
+.cover{isolation:isolate}
+.cover-ganesha{position:absolute;z-index:0;top:50%;width:clamp(180px,23vw,340px);height:auto;transform:translateY(-50%);opacity:.46;pointer-events:none;user-select:none}
+.cover-ganesha-left{left:clamp(12px,calc((100vw - 500px)/2 - 370px),32vw)}
+.cover-ganesha-right{right:clamp(12px,calc((100vw - 500px)/2 - 370px),32vw);transform:translateY(-50%) scaleX(-1)}
+.cover .cover-arch{z-index:1}
+.cover-foot{z-index:2}
+@media(max-width:900px){
+  .cover-ganesha{width:clamp(120px,18vw,150px);opacity:.28}
+  .cover-ganesha-left{left:12px}
+  .cover-ganesha-right{right:12px}
+}
+@media(max-width:760px){
+  .cover-ganesha{top:54%;width:clamp(78px,22vw,125px);opacity:.18}
+  .cover-ganesha-left{left:8px}
+  .cover-ganesha-right{right:8px}
+}
+.welcome .scroll-cue{bottom:17px}
+.guest-honoree{position:relative;z-index:2;width:min(100%,365px);margin:8px auto 0;padding:11px 18px 16px;border-bottom:1px solid #d4af6570}
+.guest-honoree>span{color:#e8d8b5b8;font-size:9px;letter-spacing:.2em}
+.guest-honoree h2{max-width:310px;margin:0 auto 10px;color:var(--ivory);font:500 clamp(23px,4vw,30px)/1.08 var(--serif)}
+.guest-honoree>strong{display:block;margin:7px 0;color:var(--gold);font:500 clamp(38px,8vw,54px)/1.02 var(--serif);text-shadow:0 3px 16px #d4af6533}
+.guest-honoree>p{max-width:290px;margin:0 auto;color:#fff8ecc7;font:14px/1.45 var(--serif)}
+.guest-name-form{display:grid;gap:8px;max-width:330px;margin:13px auto 0;text-align:left}
+.guest-name-form input{width:100%;min-height:48px;border:1px solid #d4af65a8;border-radius:2px;background:#4a0715e8;color:#fff8ec;padding:10px 14px;font:14px 'DM Sans',sans-serif;text-align:center;box-shadow:inset 0 0 0 1px #d4af6524}
+.guest-name-form input::placeholder{color:#e8d8b5b8;opacity:1}
+.guest-name-form .guest-continue{width:100%;margin-top:3px;justify-content:center}
+.guest-honoree .invitation-link-message{margin:10px auto 0;color:#f1c7a8;font:12px/1.45 'DM Sans',sans-serif}
+.guest-honoree .guest-continue{margin-top:15px}
+.guest-name-preview strong{display:block;margin-top:3px;color:#f3d98e;font:italic 23px/1.2 var(--serif)}
+.events.section-pad{background:#f3ead5;color:#4a0715}
+.events .section-kicker{border-color:#4a071522}
+.events .eyebrow{color:#9c7540}
+.event-intro{max-width:700px;margin:0 auto}
+.event-journey{position:relative;max-width:1060px;margin:54px auto 0;padding:0 4px}
+.event-journey::before{position:absolute;content:"";top:20px;bottom:20px;left:50%;width:2px;transform:translateX(-50%);background:linear-gradient(to bottom,#b9955b 0%,#e2c985 50%,#b9955b 100%);background-size:100% 220%;animation:journey-glow 8s linear infinite}
+.journey-step{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 78px minmax(0,1fr);align-items:center;margin:0 0 24px}
+.journey-node{position:relative;grid-column:2;grid-row:1;place-self:center;z-index:2;display:grid;place-items:center;width:58px;height:58px;border:1px solid #b9955b;border-radius:50%;background:#f8f0dc;color:#684a2e;box-shadow:0 0 0 8px #f3ead5;font:600 11px 'DM Sans',sans-serif;letter-spacing:.1em}
+.journey-node i{position:absolute;right:-9px;bottom:-8px;color:#9a7442;font:normal 19px var(--serif);animation:flower-sway 3s ease-in-out infinite}
+.journey-step:nth-child(odd) .event-card{grid-column:1;grid-row:1;justify-self:end}
+.journey-step:nth-child(even) .event-card{grid-column:3;grid-row:1;justify-self:start}
+.event-card{position:relative;display:flex;align-items:flex-start;flex-direction:column;width:min(100%,430px);min-height:294px;padding:31px 28px 24px;border:1px solid #b9955b55;border-radius:21px 7px 21px 7px;box-shadow:0 14px 30px #4a071510;transition:transform .35s ease,box-shadow .35s ease}
+.event-card:hover{transform:translateY(-5px);box-shadow:0 21px 37px #4a07151e}
+.journey-step:nth-child(odd) .event-card::after,.journey-step:nth-child(even) .event-card::after{position:absolute;content:"";top:50%;width:39px;border-top:1px dashed #ad8a52;z-index:-1}
+.journey-step:nth-child(odd) .event-card::after{right:-40px}
+.journey-step:nth-child(even) .event-card::after{left:-40px}
+.event-card>:not(.event-art){position:relative;z-index:1}
+.event-card .event-number{top:18px;right:20px;font-size:8px;letter-spacing:.13em;color:#72583e}
+.event-card .event-icon{display:block;margin:0 0 7px;font-size:26px}
+.event-card h3{margin:0 0 4px;text-align:left;font:600 31px/1.05 var(--serif);color:#4a0715}
+.event-card .event-note{max-width:355px;margin:7px 0 15px;font:16px/1.55 var(--serif);color:#59473c}
+.event-card .event-details{display:flex;flex-direction:column;gap:2px;margin-top:auto;padding-top:8px;font-size:11px;line-height:1.55;text-align:left;color:#664f40}
+.event-card>a{position:relative;z-index:1;display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-size:11px;color:#805a2d}
+.event-art{inset:0 0 auto auto;width:150px;height:105px}
+.event-butterfly{top:27px;left:auto;right:82px;width:28px}
+.event-haldi{background:radial-gradient(circle at 86% 17%,#e8bd37 0 4px,transparent 5px),radial-gradient(circle at 77% 49%,#e8bd37 0 5px,transparent 6px),radial-gradient(circle at 94% 70%,#f0d466 0 3px,transparent 4px),linear-gradient(145deg,#fff8d8,#f4e8b8)}
+.event-haldi .event-icon{color:#a47a1e}
+.event-mehendi{background:radial-gradient(circle at 88% 20%,#8b9d7040 0 20px,transparent 21px),linear-gradient(145deg,#f4f3df,#e7edce)}
+.event-mehendi .event-icon,.event-mehendi .event-butterfly{color:#52704a}
+.event-sangeet{background:radial-gradient(circle at 85% 19%,#e7a1b745 0 28px,transparent 29px),linear-gradient(145deg,#fbebf2,#f1dfea)}
+.event-sangeet .event-icon,.event-sangeet .event-butterfly{color:#945477}
+.event-wedding{background:radial-gradient(circle at 85% 17%,#dc8f9a32 0 28px,transparent 29px),linear-gradient(145deg,#fff0e8,#f5ddd7)}
+.event-wedding .event-icon,.event-wedding .event-butterfly{color:#a35565}
+.event-pagfera{background:radial-gradient(circle at 86% 18%,#d99a6140 0 23px,transparent 24px),linear-gradient(145deg,#f5efdc,#e6ecdc)}
+.event-pagfera .event-icon,.event-pagfera .event-butterfly{color:#638052}
+.bride-welcome-card{position:relative;isolation:isolate;overflow:hidden;max-width:880px;margin:30px auto 38px;padding:29px 118px 84px 32px;border:1px solid #d8c493;border-radius:8px 40px 8px 40px;background:linear-gradient(135deg,#fff8e9,#f2e5c9);box-shadow:0 14px 34px #31040d24;text-align:left;color:#4a0715}
+.bride-welcome-card::before{position:absolute;z-index:-1;content:none;right:15px;top:14px;color:#b8935b46;font:22px var(--serif);letter-spacing:.2em}
+.family-welcome-floral-trim{position:absolute;inset:7px;z-index:0;pointer-events:none}
+.family-welcome-trim-line{display:block;width:100%;height:100%}
+.welcome-border-flower{position:absolute;width:12px;height:12px;overflow:visible;transform:translate(-50%,-50%);filter:drop-shadow(0 1px 1px #5b281522)}
+.welcome-border-flower .flower-petals{stroke-width:.35;stroke-linejoin:round}
+.welcome-border-flower .flower-center{fill:#e4bd70;stroke:#9d7444;stroke-width:.45}
+.welcome-border-flower .flower-leaves{fill:none;stroke:#708263;stroke-width:.8;stroke-linecap:round;stroke-linejoin:round}
+.welcome-border-flower.flower-rose .flower-petals{fill:#d9958d;stroke:#a96e66}
+.welcome-border-flower.flower-rose .flower-heart{fill:#f1d6a0;stroke:#a96e66;stroke-width:.55}
+.welcome-border-flower.flower-lotus .flower-petals{fill:#ead4bd;stroke:#aa7f62}
+#family-section .bride-welcome-card>.family-welcome-floral-trim{position:absolute;inset:7px;z-index:0}
+.bride-welcome-card>.bride-welcome-kicker,
+.bride-welcome-card>h3,
+.bride-welcome-card>p,
+.bride-welcome-card>.family-welcome-flute{position:relative;z-index:1}
+.bride-welcome-kicker{color:#9a7541;font-size:9px;font-weight:600;letter-spacing:.17em}
+.bride-welcome-card h3{margin:10px 0 6px;font:500 clamp(26px,4vw,35px)/1.08 var(--serif);color:#4a0715}
+.bride-welcome-card p{max-width:660px;margin:0;font:16px/1.58 var(--serif);color:#604a3e}
+.family-row-heading{margin-top:36px}
+.event-card .event-number{top:14px;right:auto;left:24px}
+.guest-continue{margin-top:13px}
+
+/* Elegant couple name accents and individually color-matched Hindi event titles. */
+.cover-names .couple-name-accent{color:#f0cf7e;font-family:var(--serif);font-style:italic;letter-spacing:.01em;text-shadow:0 2px 14px #d4af6540}
+.names-line .couple-name-accent{color:#6d1027;font:italic 600 27px/1.1 var(--serif);text-shadow:0 1px 0 #d4af6540}
+.countdown .section-kicker .couple-name-accent{color:#e4bf68;font:italic 600 1.12em/1.1 var(--serif);letter-spacing:.02em;text-transform:none;text-shadow:0 1px 8px #d4af6530}
+.families h2 .couple-name-accent{color:#f0cf7e;font:italic 600 1.04em/1.05 var(--serif);text-shadow:0 2px 12px #d4af6530}
+.closing-signature strong .couple-name-accent{color:#f0cf7e;font-style:italic;text-shadow:0 2px 10px #d4af6530}
+.event-card h3[lang="hi"]{margin:10px 0 8px;font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-size:clamp(23px,2.3vw,27px);font-weight:600;line-height:1.4;letter-spacing:.01em;text-align:center}
+.event-card h3[lang="hi"]::after{display:block;width:38px;margin:8px auto 0;border-bottom:1px solid currentColor;content:"";opacity:.62}
+.event-haldi h3[lang="hi"]{color:#967112}
+.event-mehendi h3[lang="hi"]{color:#4f6a45}
+.event-sangeet h3[lang="hi"]{color:#895073}
+.event-wedding h3[lang="hi"]{color:#994e5b}
+.event-pagfera h3[lang="hi"]{color:#60734e}
+@keyframes journey-glow{to{background-position:0 220%}}
+@keyframes tail-fan{from{transform:rotate(-3deg)}to{transform:rotate(4deg)}}
+@media(max-width:760px){
+  .welcome-couple-art{width:165px;height:101px;margin-top:8px;margin-bottom:3px}
+  .welcome-couple-art .couple-illustration{width:155px}
+  .welcome-art-butterfly{right:-3px;width:23px}
+  .welcome .scroll-cue{bottom:12px}
+  .event-journey{margin-top:38px;padding-left:0}
+  .event-journey::before{left:28px;transform:none}
+  .journey-step{grid-template-columns:58px minmax(0,1fr);gap:12px;margin-bottom:15px}
+  .journey-node{grid-column:1;grid-row:1;width:48px;height:48px}
+  .journey-step:nth-child(odd) .event-card,.journey-step:nth-child(even) .event-card{grid-column:2;grid-row:1;justify-self:stretch;width:100%;min-height:0;padding:26px 18px 22px}
+  .journey-step .event-card::after{display:none}
+  .event-card h3{font-size:29px}
+  .event-card .event-note{max-width:100%;font-size:15px}
+  .event-art{width:125px}
+  .event-butterfly{right:65px;width:25px}
+  .bride-welcome-card{margin:26px auto 32px;padding:25px 20px 78px;border-radius:8px 28px 8px 28px}
+  .bride-welcome-card p{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){
+  .journey-node i{animation:none!important}
+  .event-journey::before{animation:none!important}
+}
+
+/* Celebration details: card-specific color, ornament, and motion. */
+.welcome-couple-art{position:absolute;bottom:52px;left:50%;width:210px;height:125px;translate:-50% 0;pointer-events:none;opacity:.9}
+.cover-note{max-width:300px;margin:-12px auto 0;color:#fff8ecc7;font:16px/1.45 var(--serif)}
+.welcome-couple-art .couple-illustration{width:190px}
+.welcome-art-butterfly{position:absolute;right:-12px;top:15px;width:30px;color:#f0d68e;animation:butterfly-drift 6s ease-in-out infinite}
+.welcome .scroll-cue{z-index:2}
+.countdown-note{max-width:610px;margin:0 auto 8px;font:17px/1.55 var(--serif);color:#fff8ecb8}
+.event-intro{max-width:660px;margin:0 auto}
+.event-grid{align-items:stretch;gap:17px}
+.event-card{isolation:isolate;display:flex;align-items:center;flex-direction:column;overflow:hidden;min-height:370px;padding:94px 17px 25px;border:0;border-radius:44% 44% 22px 22px / 16% 16% 22px 22px;box-shadow:0 12px 30px #4a071510;transition:transform .35s ease,box-shadow .35s ease}
+.event-card:hover{transform:translateY(-8px) rotate(-.5deg);box-shadow:0 20px 38px #4a07151d}
+.event-card>:not(.event-art){position:relative;z-index:1}
+.event-card .event-number{top:25px;right:22px}
+.event-card .event-icon{margin:2px 0 0;font-size:26px}
+.event-card h3{margin:8px 0 5px}
+.event-card .event-details{margin-top:auto;padding-top:10px}
+.event-card .event-note{max-width:230px;margin:7px 0 13px;font:14px/1.48 var(--serif);color:#694e42}
+.event-art{position:absolute;z-index:0;inset:0 0 auto;height:112px;pointer-events:none}
+.event-butterfly{position:absolute;top:20px;left:16px;width:28px;color:#987341;animation:butterfly-drift 7s ease-in-out infinite}
+.event-haldi{background:radial-gradient(circle at 14% 22%,#e8bd37 0 4px,transparent 5px),radial-gradient(circle at 86% 16%,#e8bd37 0 5px,transparent 6px),radial-gradient(circle at 23% 63%,#f0d466 0 3px,transparent 4px),radial-gradient(circle at 88% 73%,#e6be3d 0 4px,transparent 5px),linear-gradient(145deg,#fff9d9,#f8edbb)}
+.event-haldi .event-butterfly{color:#ad861a}
+.haldi-dot{position:absolute;display:block;border-radius:50%;background:#e1b92f;box-shadow:0 0 0 5px #e1b92f24;animation:haldi-pop 2.4s ease-in-out infinite alternate}
+.dot-one{width:10px;height:10px;right:23px;top:54px}
+.dot-two{width:6px;height:6px;right:58px;top:31px;animation-delay:.5s}
+.dot-three{width:7px;height:7px;right:44px;top:82px;animation-delay:1s}
+.event-flower{position:absolute;top:21px;right:20px;color:#d09b22;font-size:31px;transform-origin:center;animation:flower-turn 9s linear infinite}
+.event-mehendi{background:radial-gradient(circle at 83% 20%,#8b9d7040 0 17px,transparent 18px),linear-gradient(145deg,#f7f6df,#e8edcf)}
+.event-mehendi .event-butterfly{color:#52704a}
+.henna-vine{position:absolute;right:18px;top:2px;color:#58754b;font-size:81px;line-height:1;transform:rotate(19deg);animation:vine-sway 4s ease-in-out infinite alternate}
+.henna-leaf{position:absolute;color:#668252;font-size:25px;animation:flower-drift 3.2s ease-in-out infinite alternate}
+.henna-leaf.leaf-one{top:60px;right:77px;rotate:-26deg}
+.henna-leaf.leaf-two{top:30px;right:89px;color:#9a714d;animation-delay:.7s}
+.event-sangeet{background:radial-gradient(circle at 85% 16%,#e7a1b745 0 25px,transparent 26px),linear-gradient(145deg,#fbecf3,#f0deeb)}
+.event-sangeet .event-butterfly{color:#945477}
+.music-note{position:absolute;color:#97547a;font:34px var(--serif);animation:music-bob 2.5s ease-in-out infinite}
+.note-one{top:34px;right:25px}.note-two{top:9px;right:65px;font-size:42px;animation-delay:.5s}.note-three{top:68px;right:73px;animation-delay:1s}
+.event-wedding{background:radial-gradient(circle at 83% 19%,#dc8f9a32 0 24px,transparent 25px),linear-gradient(145deg,#fff1e9,#f7dfd9)}
+.event-wedding .event-butterfly{color:#a35565}
+.wedding-petal{position:absolute;color:#bd6975;font-size:28px;animation:petal-dance 4s ease-in-out infinite}
+.petal-one{top:18px;right:23px}.petal-two{top:58px;right:71px;font-size:22px;animation-delay:.8s}.petal-three{top:70px;right:36px;color:#d09a52;animation-delay:1.5s}
+.event-pagfera{background:radial-gradient(circle at 85% 17%,#d99a6140 0 20px,transparent 21px),linear-gradient(145deg,#f6f0df,#e9eedf)}
+.event-pagfera .event-butterfly{color:#638052}
+.pagfera-flower{position:absolute;color:#a47743;font-size:27px;animation:flower-drift 3.6s ease-in-out infinite alternate}
+.flower-one{top:17px;right:31px}.flower-two{top:52px;right:75px;color:#698052;animation-delay:.8s}.flower-three{top:66px;right:25px;color:#b99152;animation-delay:1.4s}
+.families{overflow:hidden}
+.family-row-heading{margin:38px auto 14px;color:#e8d8b5;font:italic 20px/1.3 var(--serif)}
+.family-row{display:grid;gap:16px;align-items:stretch}
+.family-parents{grid-template-columns:repeat(2,minmax(0,1fr));max-width:810px;margin:0 auto}
+.family-siblings{grid-template-columns:repeat(4,minmax(0,1fr));max-width:1100px;margin:0 auto}
+.family-card{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;flex-direction:column;min-height:300px;padding:36px 20px 25px;border:0;border-radius:48% 48% 16px 16px / 17% 17% 16px 16px;background:linear-gradient(155deg,#7a1a34d9,#510b1dd9);box-shadow:0 14px 32px #30040d32;transition:transform .4s ease,box-shadow .4s ease}
+.family-card:hover{transform:translateY(-7px);box-shadow:0 20px 40px #30040d52}
+.family-card::before{position:absolute;z-index:-1;content:"";width:150px;height:150px;top:-87px;left:calc(50% - 75px);border-radius:50%;background:#e8d8b51a}
+.family-flower{font-size:24px!important;color:#f0d68e!important;animation:flower-sway 3.4s ease-in-out infinite;transform-origin:center}
+.family-card h3{margin:13px 0 3px!important;font-size:27px!important}
+.family-relationship{margin:0 0 13px!important;font-size:9px!important;letter-spacing:.13em!important;color:#f0d68e!important;text-transform:uppercase}
+.family-note{max-width:330px;margin:0!important;font:15px/1.5 var(--serif);color:#fff8eccf}
+.sibling-heading{margin-top:42px}
+.reveal-on-scroll{opacity:0;transform:translateY(22px) scale(.985);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.reveal-on-scroll.is-visible{opacity:1;transform:translateY(0) scale(1)}
+@keyframes haldi-pop{from{transform:scale(.82);opacity:.58}to{transform:scale(1.18);opacity:1}}
+@keyframes flower-turn{to{rotate:360deg}}
+@keyframes vine-sway{from{transform:rotate(12deg)}to{transform:rotate(25deg)}}
+@keyframes flower-drift{from{translate:0 4px;rotate:-10deg}to{translate:0 -7px;rotate:8deg}}
+@keyframes music-bob{0%,100%{translate:0 3px;rotate:-8deg}50%{translate:0 -12px;rotate:9deg}}
+@keyframes petal-dance{0%,100%{translate:0 0;rotate:-14deg}50%{translate:-8px -13px;rotate:19deg}}
+@keyframes flower-sway{0%,100%{transform:rotate(-7deg) scale(1)}50%{transform:rotate(9deg) scale(1.08)}}
+@media(max-width:760px){
+  .welcome-couple-art{bottom:47px;width:160px;height:103px}
+  .welcome-couple-art .couple-illustration{width:158px}
+  .welcome-art-butterfly{width:24px;right:-5px}
+  .welcome .scroll-cue{bottom:12px}
+  .event-grid{gap:10px}
+  .event-card{min-height:390px;padding:92px 12px 21px}
+  .event-card .event-note{font-size:13px}
+  .family-row-heading{font-size:18px;margin-top:31px}
+  .family-parents{gap:10px}
+  .family-siblings{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .family-card{min-height:305px;padding:34px 12px 22px;border-radius:100px 100px 14px 14px}
+  .family-card h3{font-size:23px!important}
+  .family-note{font-size:14px;line-height:1.46}
+}
+@media(max-width:390px){
+  .family-card{min-height:330px;padding-left:9px;padding-right:9px}
+  .family-note{font-size:13px}
+  .event-card{min-height:410px}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal-on-scroll{opacity:1!important;transform:none!important;transition:none!important}
+  .event-card,.family-card{transition:none!important}
+  .haldi-dot,.event-flower,.henna-vine,.henna-leaf,.music-note,.wedding-petal,.pagfera-flower,.family-flower,.welcome-art-butterfly{animation:none!important}
+}
+
+/* Keep the cover and welcome message clear of nearby decorations. */
+.cover-date{margin:0 0 12px}
+.cover-note{max-width:320px;margin:0 auto;color:#fff8ecc7;font:16px/1.5 var(--serif)}
+.welcome-copy{width:min(680px,100%);margin:12px auto 0;padding:0 12px;line-height:1.55}
+.date-pill{margin:16px 0 0}
+.welcome-couple-art{position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;translate:none!important;transform:none!important;display:grid;place-items:center;width:min(210px,70vw);height:auto!important;min-height:0!important;margin:15px auto 28px;opacity:.96}
+.welcome-couple-art .couple-illustration{display:block;width:min(190px,100%);height:auto;margin:0 auto}
+.welcome-art-butterfly{right:-10px;top:12px}
+
+/* Use high contrast for family names and keep the family grid inside its section. */
+.family-parents,.family-siblings{width:100%;max-width:100%;box-sizing:border-box}
+.family-card h3{color:#fff8ec!important;text-shadow:0 1px 8px #31040d70}
+.family-note{color:#fff8ec!important;line-height:1.55}
+.family-card-butterfly{display:none}
+@media(max-width:760px){
+  .welcome-couple-art{width:min(165px,58vw);margin:12px auto 27px}
+  .welcome-couple-art .couple-illustration{width:100%}
+  .family-row{width:100%}
+}
+
+/* Light mandap arches and gentle animal motion carry the existing palette through each section. */
+.section-scenery{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;color:#c5a466;opacity:.48}
+.section-scenery~:not(.section-butterfly):not(.scroll-cue):not(.welcome-side):not(.story-seal){position:relative;z-index:1}
+.scenery-motif{position:absolute;inset:0;width:100%;height:100%;opacity:.64;-webkit-mask-image:linear-gradient(90deg,#000 0 16%,transparent 22% 78%,#000 84% 100%);mask-image:linear-gradient(90deg,#000 0 16%,transparent 22% 78%,#000 84% 100%)}
+.scenery-motif g{fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.motif-welcome .scenery-motif{color:#d4af65}
+.motif-story .scenery-motif{color:#d9a48d}
+.motif-countdown .scenery-motif{color:#d7b768}
+.motif-events .scenery-motif{color:#bd8c50}
+.motif-venue .scenery-motif{color:#d8b675}
+.motif-family .scenery-motif{color:#d7a980}
+.motif-rsvp .scenery-motif{color:#d7b768}
+.motif-farewell .scenery-motif{color:#d9a48d}
+.motif-shagun .scenery-motif{color:#c5a466}
+.scenery-creature{position:absolute;width:clamp(82px,9vw,132px);height:auto;opacity:.72;filter:drop-shadow(0 8px 12px #32101919)}
+.scenery-peacock .scenery-creature{right:2.5%;bottom:14px}
+.scenery-elephant .scenery-creature{left:2.5%;bottom:13px}
+.scenery-peacock .peacock-fan{transform-box:fill-box;transform-origin:55% 75%;animation:tail-fan 5.5s ease-in-out infinite alternate}
+.scenery-elephant .elephant-sway{transform-box:fill-box;transform-origin:50% 100%;animation:elephant-gentle-sway 4.5s ease-in-out infinite}
+.scenery-petal{position:absolute;color:currentColor;opacity:.75;animation:scenery-drift 7s ease-in-out infinite}
+.scenery-petal-one{left:7%;top:22%;font-size:22px}
+.scenery-petal-two{right:12%;top:38%;font-size:18px;animation-delay:1.8s}
+.events>.section-scenery{opacity:.62}
+.events-arch-swarm{position:absolute;inset:0;z-index:1;pointer-events:none}
+.events-arch-butterfly{position:absolute;width:25px;height:22px;opacity:.9;filter:drop-shadow(0 1px 2px #70502a40);transform:translate(-50%,-50%);animation:arch-butterfly-float 5.8s ease-in-out infinite}
+.events-arch-flower{position:absolute;color:#cf8d49;font:22px/1 var(--serif);text-shadow:0 1px 2px #70502a40;transform:translate(-50%,-50%);transform-origin:center;animation:arch-flower-bloom 3.4s ease-in-out infinite}
+@keyframes arch-butterfly-float{0%,100%{transform:translate(-50%,-50%) translateY(0) rotate(-5deg)}50%{transform:translate(-50%,-50%) translateY(-4px) rotate(5deg)}}
+@keyframes arch-flower-bloom{0%,100%{transform:translate(-50%,-50%) scale(.92) rotate(-4deg)}50%{transform:translate(-50%,-50%) scale(1.08) rotate(4deg)}}
+@media(max-width:760px){.events-arch-butterfly{width:12px;height:11px}.events-arch-flower{font-size:12px}}
+#events>.event-feather-layer{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.event-peacock-feather{position:absolute;width:clamp(170px,18vw,330px);height:auto;opacity:1;filter:drop-shadow(0 5px 10px #5a43231c)}
+.event-peacock-feather-left{left:.5%;top:10%;transform:rotate(-4deg)}
+.event-peacock-feather-right{right:.5%;top:10%;transform:scaleX(-1) rotate(-4deg)}
+.event-peacock-feather-left-mid{left:1%;top:39%;width:clamp(125px,13vw,230px);transform:scaleX(-1) rotate(5deg)}
+.event-peacock-feather-left-lower{left:7%;top:72%;width:clamp(105px,10vw,180px);transform:rotate(-7deg)}
+.event-peacock-feather-right-mid{right:1%;top:49%;width:clamp(125px,13vw,230px);transform:rotate(5deg)}
+.event-peacock-feather-right-lower{right:7%;top:76%;width:clamp(105px,10vw,180px);transform:scaleX(-1) rotate(-7deg)}
+.events-diya{position:absolute;z-index:1;bottom:4.5%;width:76px;height:54px;overflow:visible}
+.events-diya-left{left:11%}.events-diya-right{right:11%}
+.diya-glow{fill:#efa936;opacity:.19;filter:blur(6px)}
+.diya-flame{fill:#f2b83f;stroke:#c88435;stroke-width:1.5;transform-box:fill-box;transform-origin:50% 100%;animation:diya-flicker 1.15s ease-in-out infinite alternate}
+.diya-wick{fill:none;stroke:#74502f;stroke-width:2;stroke-linecap:round}
+.diya-bowl{fill:#cd9650;stroke:#8e632f;stroke-width:2;stroke-linejoin:round}
+.diya-rim{fill:none;stroke:#fff0b9;stroke-width:2;stroke-linecap:round}
+@keyframes diya-flicker{from{transform:scale(.92) rotate(-3deg)}to{transform:scale(1.08) rotate(3deg)}}
+@media(max-width:760px){.events>.section-scenery{opacity:.5}.event-peacock-feather{width:clamp(105px,24vw,175px)}.event-peacock-feather-left{left:-2%;top:12%}.event-peacock-feather-right{right:-2%;top:12%}.event-peacock-feather-left-mid{left:-3%;top:41%;width:clamp(92px,19vw,145px)}.event-peacock-feather-left-lower{left:-1%;top:74%;width:clamp(78px,15vw,112px)}.event-peacock-feather-right-mid{right:-3%;top:58%;width:clamp(92px,19vw,145px)}.event-peacock-feather-right-lower{right:0;top:79%;width:clamp(82px,16vw,125px)}.events-diya{width:56px;height:40px;bottom:2.5%}.events-diya-left{left:5%}.events-diya-right{right:5%}}
+.journey-step:nth-child(odd) .journey-aside{grid-column:3;grid-row:1}
+.journey-step:nth-child(even) .journey-aside{grid-column:1;grid-row:1}
+.journey-mascot{display:grid;place-items:center;align-self:center;justify-self:center;position:relative;width:min(100%,158px);min-height:174px;padding:8px;color:#a88247;opacity:.96}
+.journey-mascot::before{position:absolute;content:"";inset:15px 8px;border:1px solid #b9955b55;border-radius:52% 48% 48% 52%;background:radial-gradient(ellipse at center,#fffaf052,transparent 72%);transform:rotate(-7deg)}
+.journey-mascot svg{position:relative;z-index:1;display:block;width:min(100%,148px);height:auto;overflow:visible;filter:drop-shadow(0 7px 10px #5f482514)}
+.vignette-haldi{color:#b18537}.vignette-mehendi{color:#688056}.vignette-sangeet{color:#995a79}.vignette-wedding{color:#a35565}.vignette-pagfera{color:#8a7146}
+.sun-character{transform-box:fill-box;transform-origin:center;animation:sun-character-bob 2.8s ease-in-out infinite}
+.haldi-splash{fill:#d9ad2e;animation:haldi-splash-pop 2.1s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+.splash-b{animation-delay:.35s}.splash-c{animation-delay:.7s}
+.mehendi-hand{transform-box:fill-box;transform-origin:70% 90%;animation:mehendi-hand-wave 3.6s ease-in-out infinite}
+.mehendi-vine{stroke-dasharray:110;stroke-dashoffset:110;animation:henna-draw 3.8s ease-in-out infinite alternate}
+.sangeet-dhol{transform-box:fill-box;transform-origin:center;animation:dhol-bounce 1.2s ease-in-out infinite}
+.sangeet-note{font:28px var(--serif);fill:#995a79;animation:music-bob 1.8s ease-in-out infinite}
+.sangeet-note.note-b{animation-delay:.55s}
+.wedding-pair{transform-box:fill-box;transform-origin:center bottom;animation:character-bob 2.4s ease-in-out infinite}
+.wedding-flower{transform-box:fill-box;transform-origin:center;animation:flower-turn 12s linear infinite}
+.pagfera-kalash{transform-box:fill-box;transform-origin:center bottom;animation:kalash-sway 3.4s ease-in-out infinite}
+.pagfera-footprints{animation:footsteps-glow 2.5s ease-in-out infinite alternate}.pagfera-lotus{transform-box:fill-box;transform-origin:center;animation:flower-sway 3.4s ease-in-out infinite}
+.event-card>:not(.event-art):not(.event-number){position:relative;z-index:1}
+.event-card .event-number{position:absolute!important;z-index:3;top:20px;left:50%!important;right:auto;width:max-content;max-width:calc(100% - 48px);padding:6px 12px;border:1px solid #b9955b70;border-radius:30px;background:#fffdf0f2;color:#715633;line-height:1.2;transform:translateX(-50%)}
+@keyframes elephant-gentle-sway{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-4px) rotate(1deg)}}
+@keyframes scenery-drift{0%,100%{translate:0 0;rotate:-5deg}50%{translate:8px -12px;rotate:8deg}}
+@keyframes sun-character-bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
+@keyframes haldi-splash-pop{from{transform:scale(.7);opacity:.45}to{transform:scale(1.25);opacity:1}}
+@keyframes mehendi-hand-wave{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+@keyframes henna-draw{from{stroke-dashoffset:110}to{stroke-dashoffset:0}}
+@keyframes dhol-bounce{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-5px) rotate(3deg)}}
+@keyframes kalash-sway{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+@keyframes footsteps-glow{from{opacity:.35}to{opacity:1}}
+@media(max-width:760px){
+  .section-scenery{opacity:.33}
+  .scenery-motif{opacity:.55;-webkit-mask-image:linear-gradient(90deg,#000 0 18%,transparent 25% 75%,#000 82% 100%);mask-image:linear-gradient(90deg,#000 0 18%,transparent 25% 75%,#000 82% 100%)}
+  .scenery-creature{width:86px}
+  .scenery-peacock .scenery-creature{right:1%;bottom:10px}
+  .scenery-elephant .scenery-creature{left:1%;bottom:10px}
+  .journey-mascot{display:none}
+  .event-card .event-number{top:14px;left:50%!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .scenery-peacock .peacock-fan,.scenery-elephant .elephant-sway,.scenery-petal,.sun-character,.haldi-splash,.mehendi-hand,.mehendi-vine,.sangeet-dhol,.sangeet-note,.wedding-pair,.wedding-flower,.pagfera-kalash,.pagfera-footprints,.pagfera-lotus{animation:none!important}
+}
+
+/* Keep moment labels inside the arch's safe area and give every event illustration room. */
+.event-card{padding:32px 24px 24px}
+.event-card .event-number{position:relative!important;top:auto;right:auto;left:auto!important;align-self:center;margin:0 0 10px;transform:none;width:max-content;max-width:100%;text-align:center}
+.event-card .event-icon{margin-top:0}
+
+/* Let the distinct mandap linework read clearly while staying at the section edges. */
+.section-scenery{opacity:.58}
+.scenery-motif{opacity:.82;-webkit-mask-image:linear-gradient(90deg,#000 0 17%,transparent 27% 73%,#000 83% 100%);mask-image:linear-gradient(90deg,#000 0 17%,transparent 27% 73%,#000 83% 100%)}
+.scenery-motif g{stroke-width:3}
+@media(max-width:760px){
+  .event-card{padding:30px 16px 22px}
+  .journey-mascot{display:grid;grid-column:2;grid-row:2;width:132px;min-height:118px;margin:8px auto 0}
+  .journey-mascot::before{inset:10px 20px}
+  .journey-mascot svg{width:110px}
+}
+
+.closing-slide{display:grid;place-items:center;min-height:760px;overflow:hidden;padding-top:90px;padding-bottom:90px;text-align:center;background:radial-gradient(ellipse at 50% 36%,#721831 0%,#4a0715 62%,#31040d 100%);color:var(--ivory)}
+.closing-card{position:relative;z-index:1;isolation:isolate;overflow:hidden;width:min(100%,820px);min-height:560px;padding:74px clamp(24px,7vw,76px) 82px;border:1px solid #d4af6580;border-radius:410px 410px 24px 24px / 180px 180px 24px 24px;background:linear-gradient(155deg,#6c1429f2,#470814f5);box-shadow:inset 0 0 0 8px #d4af650c,inset 0 0 0 9px #d4af6530,0 24px 70px #18030a44;animation:closing-rise .9s cubic-bezier(.2,.72,.25,1) both}
+.closing-seal{display:grid;place-items:center;width:62px;height:62px;margin:0 auto 20px;border:1px solid #d4af65a8;border-radius:50%;color:#f0d68e;font:36px/1 var(--serif);box-shadow:0 0 0 8px #d4af6512;animation:closing-seal-glow 3s ease-in-out infinite}
+.closing-declined .closing-seal{font-size:25px;animation:closing-letter-sway 4s ease-in-out infinite}
+.closing-slide .eyebrow{color:#e8d8b5c9}
+.closing-card h2{max-width:650px;margin:12px auto 18px;color:var(--ivory);font:500 clamp(38px,6vw,58px)/1.02 var(--serif)}
+.closing-card h2 em{color:var(--gold);font-weight:400}
+.closing-message{max-width:590px;margin:0 auto;color:#fff8ecd9;font:18px/1.65 var(--serif)}
+.closing-guest-note{max-width:520px;margin:25px auto 0;padding:14px 20px;border-left:1px solid #d4af6580;border-right:1px solid #d4af6580;color:#f0dcb9;font:italic 16px/1.55 var(--serif)}
+.closing-signature{margin:29px auto 0;color:#e8d8b5c9;font:italic 16px/1.5 var(--serif)}
+.closing-signature strong{display:inline-block;margin-top:4px;color:var(--gold);font:500 22px/1.25 var(--serif)}
+.closing-date{margin-top:22px;color:#d4af65b8;font-size:9px;letter-spacing:.2em;text-transform:uppercase}
+.closing-diya{display:block;width:min(48vw,320px);height:auto;margin:25px auto 0;filter:drop-shadow(0 5px 12px #e3bd6a55)}
+.closing-flourish{position:absolute;bottom:14px;left:22px;color:#d4af65a8;font-size:15px;letter-spacing:.1em}
+.closing-butterfly{position:absolute;z-index:-1;width:35px;color:#f0d68e;animation:butterfly-drift 7s ease-in-out infinite}
+.closing-butterfly-one{left:8%;top:27%;rotate:-12deg;color:#e7c36d}
+.closing-butterfly-two{right:8%;top:40%;width:29px;color:#ed91ac;animation-delay:1.4s}
+.closing-butterfly-three{left:11%;top:68%;width:26px;color:#71c6b0;animation-delay:2.4s}
+.closing-butterfly-four{right:12%;top:72%;width:31px;color:#a9a4ea;animation-delay:3.1s}
+.closing-peacock-feather{position:absolute;z-index:0;top:40%;width:clamp(78px,9vw,112px);height:auto;opacity:.28;filter:drop-shadow(0 0 8px #d4af6540);pointer-events:none}
+.closing-peacock-feather-left{left:4%}
+.closing-peacock-feather-right{right:4%;transform:scaleX(-1)}
+.closing-slide .section-scenery{opacity:.52}
+.closing-slide .scenery-creature{width:clamp(85px,10vw,140px)}
+.rsvp-note a{display:inline-flex;align-items:center;gap:4px;margin-left:6px;color:#805a2d;text-decoration:underline;text-underline-offset:3px}
+@keyframes closing-rise{from{opacity:0;transform:translateY(26px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes closing-seal-glow{0%,100%{transform:scale(1);box-shadow:0 0 0 8px #d4af6512}50%{transform:scale(1.06);box-shadow:0 0 0 13px #d4af651c}}
+@keyframes closing-letter-sway{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-3px)}}
+@media(max-width:760px){
+  .closing-slide{min-height:680px;padding:64px 6%}
+  .closing-card{min-height:0;padding:68px 20px 78px;border-radius:48% 48% 18px 18px / 120px 120px 18px 18px}
+  .closing-card h2{font-size:clamp(36px,10vw,48px)}
+  .closing-message{font-size:16px;line-height:1.58}
+  .closing-guest-note{padding:12px 14px;font-size:15px}
+  .closing-butterfly-one{left:7%;top:23%;width:27px}
+  .closing-butterfly-two{right:6%;top:40%;width:24px}
+  .closing-butterfly-three{left:7%;top:70%;width:22px}
+  .closing-butterfly-four{right:8%;top:72%;width:24px}
+  .closing-peacock-feather{width:60px;top:42%;opacity:.2}
+  .closing-flourish{left:12px;bottom:12px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .closing-card,.closing-seal,.closing-butterfly{animation:none!important}
+}
+
+/* Mantras are quiet, recessed wall details rather than message cards. */
+.sanskrit-inscription{position:relative;z-index:1;width:min(100%,760px);margin:0;padding:0;border:0;background:none;color:#9c8968;font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-size:14px;font-weight:500;line-height:1.8;letter-spacing:0;text-align:center;white-space:pre-line;opacity:.48;text-shadow:0 -1px 0 #fff9ed9c,0 1px 0 #806d4f55}
+.opening-mantra{position:absolute;z-index:2;top:28%;right:4%;width:22%;max-width:112px;margin:0;color:#c7aa70;font-size:clamp(10px,1vw,13px);line-height:1.7;text-align:right;opacity:.42;text-shadow:0 -1px 0 #fff0ca50,0 1px 0 #1b050b9c}
+.story-grid{position:relative;z-index:2;max-width:760px;margin-right:auto;margin-left:auto}
+.story-verses{position:absolute;inset:0;z-index:1;max-width:none;margin:0;pointer-events:none}
+.story-verses .sanskrit-inscription{position:absolute;width:min(12vw,170px);max-width:170px;margin:0;color:#95815f;font-size:13px;line-height:1.8;opacity:.34}
+.journey-aside{display:grid;grid-template-columns:minmax(100px,140px) minmax(0,1fr);align-items:center;gap:5px;align-self:center;justify-self:stretch;min-width:0}
+.journey-aside .journey-mascot{grid-column:auto;grid-row:auto;width:100%;min-height:160px;padding:0}
+.journey-aside .journey-mascot svg{width:min(100%,132px)}
+.journey-aside .event-wall-verse{width:100%;max-width:none;font-size:clamp(11px,.95vw,14px);line-height:1.8;text-align:left;opacity:.42;color:#927850;text-shadow:0 -1px 0 #fffaf0,0 1px 0 #8e7753}
+.final-mantra-section{position:relative;isolation:isolate;display:grid;place-items:center;min-height:150px;overflow:hidden;padding:36px 8%;background:radial-gradient(ellipse at center,#fff9ed 0%,#f3e8d6 72%,#eadbbf 100%);text-align:center}
+.final-mantra{position:relative;z-index:1;width:min(100%,760px);margin:0;color:#998463;font-size:clamp(14px,1.45vw,17px);line-height:1.9;opacity:.48;text-shadow:0 -1px 0 #fffdf4,0 1px 0 #927b58}
+.website-signature{position:relative;z-index:1;margin:0;padding:17px 16px max(18px,env(safe-area-inset-bottom));border-top:1px solid #d4af6525;background:#31040d;color:#e8d8b5;font:italic clamp(16px,1.5vw,19px)/1.4 'Segoe Script','Lucida Handwriting','Brush Script MT',cursive;letter-spacing:.01em;text-align:center}
+@media(max-width:760px){
+  .opening-mantra{top:28%;right:3%;width:22%;font-size:10px}
+  .story-grid{max-width:100%}
+  .journey-aside{grid-column:2;grid-row:2;grid-template-columns:clamp(82px,27%,112px) minmax(0,1fr);gap:6px;width:100%;margin:7px 0 2px}
+  .journey-aside .journey-mascot{grid-column:auto;grid-row:auto;width:100%;min-height:118px;margin:0}
+  .journey-aside .journey-mascot::before{inset:9px 10px}
+  .journey-aside .journey-mascot svg{width:min(100%,104px)}
+  .journey-aside .event-wall-verse{font-size:clamp(10px,3vw,12px);line-height:1.7}
+  .final-mantra-section{min-height:128px;padding:26px 7% 24px}
+  .final-mantra{font-size:14px}
+  .website-signature{font-size:16px;padding-top:15px}
+}
+@media(min-width:761px) and (max-width:1050px){
+  .story-verses{position:relative;inset:auto;display:grid;gap:12px;max-width:760px;margin:24px auto 0}
+  .story-verses .sanskrit-inscription{position:relative;top:auto;right:auto;bottom:auto;left:auto;width:100%;max-width:100%;text-align:center;opacity:.32}
+}
+@media(min-width:761px) and (max-width:1399px){
+}
+
+/* Mantras follow the section arches as curved inscriptions, never as separate cards. */
+.arched-mantra{display:block;width:100%;height:255px;max-width:620px;margin:22px auto 0;overflow:visible;opacity:.96}
+.mantra-text-line{font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-size:18px;font-weight:500;fill:currentColor;stroke:#fff8e84d;stroke-width:.45;paint-order:stroke fill;stroke-linejoin:round}
+.story-verses{position:relative;inset:auto;z-index:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:18px;width:min(100%,1120px);max-width:1120px;margin:38px auto 0;pointer-events:none}
+.story-verses .sanskrit-inscription{position:relative;top:auto;right:auto;bottom:auto;left:auto;width:100%;max-width:560px;height:245px;margin:0 auto;color:#8b7354;line-height:1.8;text-align:center;opacity:.94}
+.final-mantra-section{position:relative;isolation:isolate;display:block;min-height:0;overflow:hidden;padding:12px 5% 18px;background:radial-gradient(ellipse at center,#fff9ed 0%,#f3e8d6 72%,#eadbbf 100%);text-align:center}
+.final-mantra{width:min(100%,760px);max-width:760px;height:285px;margin:0 auto;color:#90764f;font-size:16px;line-height:1.8;opacity:.97;text-shadow:none}
+.arched-mantra .mantra-text-line{font-size:17px}
+.final-mantra .mantra-text-line{font-size:17px}
+
+/* A floral doorway frame decorates the family cards, animated couple, and celebration cards. */
+.mandap-arch{position:absolute;z-index:0;inset:0;display:block;width:100%;height:100%;margin:0;color:var(--portal-metal,#c19b5b);opacity:.72;pointer-events:none}
+.mandap-arch-art{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:visible}
+.mandap-arch-art path,.mandap-arch-art circle{vector-effect:non-scaling-stroke}
+.portal-arch-shadow{fill:none;stroke:var(--portal-shadow,#69472d);stroke-width:17;stroke-linecap:round;opacity:.13}
+.portal-arch-outer{fill:none;stroke:var(--portal-metal,#c19b5b);stroke-width:10;stroke-linecap:round;filter:drop-shadow(0 3px 2px #32190f25)}
+.portal-arch-inner{fill:none;stroke:var(--portal-shadow,#69472d);stroke-width:2;opacity:.68}
+.portal-arch-light{fill:none;stroke:#fff7df;stroke-width:1.2;opacity:.7}
+.portal-column-detail{fill:none;stroke:var(--portal-metal,#c19b5b);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.88}
+.portal-column-detail path:nth-child(2){stroke-width:1.2;opacity:.75}
+.portal-toran{fill:var(--portal-garland,#ad8150);stroke:var(--portal-garland,#ad8150);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;opacity:.86}
+.portal-toran path:first-child{fill:none;stroke-width:2.4}
+.portal-keystone{fill:var(--portal-metal,#c19b5b);stroke:var(--portal-shadow,#69472d);stroke-width:1.2}
+.portal-hanging-details{fill:var(--portal-metal,#c19b5b);stroke:var(--portal-metal,#c19b5b);stroke-width:1.5;stroke-linecap:round;opacity:.85}
+.portal-theme-detail{fill:none;stroke:#f2d18a;stroke-width:2;stroke-linecap:round;opacity:.85}
+.event-card>.mandap-arch,.family-card>.mandap-arch,.bride-welcome-card>.mandap-arch,.welcome-couple-art>.mandap-arch{position:absolute;z-index:0;inset:0}
+.event-card>.mandap-arch{position:absolute!important;z-index:0!important;inset:0!important;width:100%;height:100%;opacity:.55}
+.event-card>:not(.event-art):not(.event-number):not(.mandap-arch){position:relative;z-index:1}
+.family-card>:not(.mandap-arch),.bride-welcome-card>:not(.mandap-arch){position:relative;z-index:1}
+.welcome-couple-art>.couple-illustration,.welcome-couple-art>.welcome-art-butterfly{position:relative;z-index:1}
+.arch-family-member{--portal-metal:#dfbd70;--portal-shadow:#390b18;--portal-garland:#c99958;opacity:.68}
+.arch-family-welcome{--portal-metal:#b88d4d;--portal-shadow:#73543a;--portal-garland:#a86f54;opacity:.52}
+.arch-couple{--portal-metal:#e2be70;--portal-shadow:#6b3929;--portal-garland:#c48a59;opacity:.78}
+.arch-event{--portal-metal:#bd9653;--portal-shadow:#74583b;--portal-garland:#bd795f;opacity:.58}
+.arch-haldi{--portal-metal:#c49a3f;--portal-garland:#d1a73d}
+.arch-mehendi{--portal-metal:#768653;--portal-garland:#718654}
+.arch-sangeet{--portal-metal:#a66b88;--portal-garland:#ad7191}
+.arch-wedding{--portal-metal:#ad6b62;--portal-garland:#bc8067}
+.arch-pagfera{--portal-metal:#a98b56;--portal-garland:#9a8053}
+.arch-event .portal-keystone,.arch-family-member .portal-keystone{opacity:.2}
+.welcome-couple-art{position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;translate:none!important;transform:none!important;display:grid;place-items:end center;width:min(258px,78vw)!important;height:220px!important;min-height:220px!important;margin:18px auto 30px!important;padding:0 18px 6px;opacity:.98}
+.welcome-couple-art .couple-illustration{width:min(190px,100%);height:auto;margin:0 auto}
+.bride-welcome-card{padding-top:48px}
+.family-card{padding-top:52px;border:1px solid #d4af6538}
+@media(max-width:900px){
+  .story-verses{grid-template-columns:1fr;width:min(100%,660px);gap:0;margin-top:25px}
+  .story-verses .sanskrit-inscription{height:235px}
+}
+@media(max-width:760px){
+  .arched-mantra{height:225px;margin-top:16px}
+  .story-verses{width:100%;margin-top:20px}
+  .story-verses .sanskrit-inscription{height:215px}
+  .final-mantra{height:245px}
+  .welcome-couple-art{width:min(238px,78vw)!important;height:205px!important;min-height:205px!important;margin:12px auto 27px!important}
+  .bride-welcome-card{padding-top:46px}
+  .family-card{padding-top:48px}
+}
+@media(max-width:390px){
+  .mantra-text-line{font-size:15px}
+  .welcome-couple-art{height:190px!important;min-height:190px!important}
+}
+
+/* Keep the opening shloka arched in the cover's upper side wall. */
+.opening-mantra{position:absolute;z-index:2;top:6%;right:4%;left:auto;width:min(39%,195px);height:150px;margin:0;overflow:visible;color:#c7aa70;opacity:.5;pointer-events:none}
+.opening-mantra .mantra-text-line{font-size:26px;fill:currentColor;stroke:#fff0ca50;stroke-width:.7}
+@media(max-width:760px){
+  .opening-mantra{top:2.5%;right:3%;width:min(40%,174px);height:132px}
+  .opening-mantra .mantra-text-line{font-size:25px}
+}
+
+/* The family welcome copy has its own clear space; member cards stay simple and readable. */
+.bride-welcome-card{padding:42px 48px 96px;text-align:center}
+.bride-welcome-card .bride-welcome-kicker,.bride-welcome-card h3,.bride-welcome-card p{position:relative;z-index:1}
+.bride-welcome-card h3{max-width:760px;margin:12px auto 10px}
+.bride-welcome-card p{max-width:760px;margin:0 auto;font-size:18px;line-height:1.68}
+.family-card{min-height:285px;padding:28px 22px 24px;border:1px solid #d4af6540;border-radius:18px;background:linear-gradient(155deg,#7a1a34e8,#510b1de8);box-shadow:0 14px 32px #30040d32}
+.family-card::before{display:none}
+.family-card h3{margin:10px 0 3px!important}
+.family-card .family-note{max-width:340px}
+
+/* Fit the illustrated couple within its doorway and keep the butterfly inside the frame. */
+.arch-couple{opacity:.68}
+.welcome-couple-art{width:min(265px,78vw)!important;height:230px!important;min-height:230px!important;margin:12px auto 22px!important;padding:0 15px 9px}
+.welcome-couple-art>.mandap-arch{position:absolute;z-index:0;inset:0}
+.welcome-couple-art>.couple-illustration{position:relative;z-index:1;width:min(202px,100%);height:auto;margin:0 auto}
+.welcome-couple-art>.welcome-art-butterfly{position:absolute;z-index:2;top:17%;right:13%;left:auto;bottom:auto;width:24px;height:auto;color:#f0d68e}
+@media(max-width:760px){
+  .bride-welcome-card{padding:32px 22px 88px}
+  .bride-welcome-card p{font-size:16px;line-height:1.62}
+  .family-card{min-height:305px;padding:30px 13px 22px;border-radius:17px}
+  .welcome-couple-art{width:min(238px,78vw)!important;height:210px!important;min-height:210px!important;margin:10px auto 20px!important}
+  .welcome-couple-art>.couple-illustration{width:min(188px,100%)}
+  .welcome-couple-art>.welcome-art-butterfly{top:17%;right:13%;width:21px}
+}
+@media(max-width:390px){
+  .welcome-couple-art{height:198px!important;min-height:198px!important}
+  .family-card{padding-left:10px;padding-right:10px}
+}
+
+/* Distinct inscription curves fit the three retained mantras to their existing artwork. */
+.story-verses{display:block;width:min(100%,900px);max-width:900px;margin:24px auto 0;pointer-events:none}
+.story-verses .mangalam-mantra{display:block;width:min(100%,760px);max-width:760px;height:300px;margin:0 auto;color:#8b7354;opacity:.52}
+.mangalam-mantra .mantra-text-line{font-size:19px;stroke:#fff8e84d;stroke-width:.45}
+.final-mantra{width:min(100%,760px);max-width:760px;height:247px;margin:0 auto}
+.final-mantra .mantra-text-line{font-size:18px}
+@media(max-width:760px){
+  .story-verses{width:100%;margin:16px auto 0}
+  .story-verses .mangalam-mantra{height:220px}
+  .mangalam-mantra .mantra-text-line{font-size:24px}
+  .final-mantra{height:205px}
+  .final-mantra .mantra-text-line{font-size:24px}
+}
+
+/* Give the RSVP and Shagun panels the layered paper-and-gold finish used elsewhere. */
+.rsvp-form{position:relative;isolation:isolate;gap:16px;padding:30px;border:1px solid #c9a15e99;border-radius:8px 34px 8px 34px;background:linear-gradient(145deg,#fffdf8 0%,#f8eedc 100%);box-shadow:0 18px 44px #4a071518,inset 0 0 0 6px #fff8ec}
+.rsvp-form::before{position:absolute;z-index:-1;inset:9px;content:"";border:1px solid #d4af6540;border-radius:5px 27px 5px 27px;pointer-events:none}
+.rsvp-form::after{position:absolute;top:-12px;left:50%;content:"✦　❋　✦";transform:translateX(-50%);padding:0 12px;background:#fffaf1;color:#a98248;font:13px/1 var(--serif);letter-spacing:.12em}
+.rsvp-form label{color:#5b4038}
+.rsvp-form input,.rsvp-form select,.rsvp-form textarea{border-color:#c7a263;background:#fffefa;transition:border-color .2s ease,box-shadow .2s ease}
+.rsvp-form input:focus,.rsvp-form select:focus,.rsvp-form textarea:focus{border-color:#9d7133;box-shadow:0 0 0 3px #d4af6524}
+.rsvp-form textarea{min-height:104px;resize:vertical}
+.shagun-card{isolation:isolate;max-width:500px;padding:32px 30px 28px;border:1px solid #c9a15eaa;border-radius:30px 6px 30px 6px;background:linear-gradient(145deg,#fffdf8 0%,#f6ebd6 100%);box-shadow:0 18px 42px #4a07151b,inset 0 0 0 6px #fff9ef}
+.shagun-card.has-qr{max-width:760px}
+.shagun-card::before{position:absolute;z-index:-1;inset:9px;content:"";border:1px solid #d4af6542;border-radius:22px 3px 22px 3px;pointer-events:none}
+.shagun-card::after{position:absolute;top:15px;right:22px;content:"✦  ❋  ✦";color:#a9824866;font:14px/1 var(--serif);letter-spacing:.1em;pointer-events:none}
+.shagun-entry>label{padding-right:105px;color:#5b4038;font-family:var(--serif);font-size:15px;letter-spacing:.04em}
+.amount-field{border-radius:3px;background:#fffefa;box-shadow:inset 0 1px 4px #4a07150b;transition:border-color .2s ease,box-shadow .2s ease}
+.amount-field:focus-within{border-color:#9d7133;box-shadow:0 0 0 3px #d4af6524,inset 0 1px 4px #4a07150b}
+.amount-prompt{margin:18px 0 0;padding:11px 14px;border-left:2px solid #c6a05f;background:#f6eddc;color:#684a32;font:italic 17px/1.45 var(--serif)}
+@media(max-width:760px){
+  .rsvp-form{padding:24px 18px;border-radius:7px 26px 7px 26px}
+  .rsvp-form::before{inset:7px;border-radius:4px 20px 4px 20px}
+  .shagun-card{padding:28px 19px 22px;border-radius:24px 5px 24px 5px}
+  .shagun-card::before{inset:7px;border-radius:17px 3px 17px 3px}
+  .shagun-card::after{top:12px;right:14px;font-size:12px}
+  .shagun-entry>label{padding-right:82px;font-size:14px}
+}
+
+/* Keep the non-event mantras readable along their existing architectural curves. */
+.story .section-kicker,.story .eyebrow{color:#65452e}
+.story .section-kicker span{color:#8e6739}
+.opening-mantra{position:absolute!important;inset:0!important;z-index:2!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;overflow:hidden;color:#dfc27b;opacity:.9;pointer-events:none}
+.opening-mantra .mantra-text-line{font-size:16px;fill:currentColor;stroke:#fff0ca90;stroke-width:.65;paint-order:stroke fill;letter-spacing:.1px}
+.section-scenery~svg.mangalam-mantra{position:absolute!important;inset:0!important;z-index:1!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;overflow:hidden;color:#765b39;opacity:.78;pointer-events:none}
+.mangalam-mantra .mantra-text-line{font-size:15px;fill:currentColor;stroke:#fff9ed90;stroke-width:.5;paint-order:stroke fill;letter-spacing:.08px}
+.closing-card>.final-mantra{position:absolute!important;inset:0!important;z-index:0!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;overflow:hidden;color:#e2c986;opacity:.66;pointer-events:none}
+.final-mantra .mantra-text-line{font-size:15px;fill:currentColor;stroke:#fff1c380;stroke-width:.5;paint-order:stroke fill;letter-spacing:.08px}
+.closing-card>:not(.final-mantra):not(.closing-butterfly):not(.closing-peacock-feather):not(.closing-flourish){position:relative;z-index:1}
+.footer-mantra{position:absolute!important;inset:0!important;z-index:1!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;overflow:hidden!important;color:#d0ad68;opacity:.88;pointer-events:none}
+.footer-mantra .mantra-text-line{font-size:16px;fill:currentColor;stroke:#fff0ca80;stroke-width:.6;paint-order:stroke fill;letter-spacing:.05px}
+.story .section-kicker,.story .eyebrow{color:#45101a!important;font-size:12px;font-weight:700;letter-spacing:.16em}
+.story .section-kicker span{color:#795324}
+.story .section-scenery~svg.mangalam-mantra{color:#76552f;opacity:.86}
+.mangalam-mantra .mantra-text-line{font-size:17px;stroke:#fff9edb0;stroke-width:.55}
+.families>.eyebrow{color:#f0d68e!important;font-size:12px;font-weight:700;letter-spacing:.18em;text-shadow:0 1px 2px #31040d66}
+.bride-welcome-card .bride-welcome-kicker{color:#80521f;font-size:11px;font-weight:700}
+.bride-welcome-card .family-mantra{position:relative;z-index:1;max-width:760px;margin:23px auto 34px;color:#765332;font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-size:clamp(17px,1.65vw,21px);font-weight:500;line-height:1.8;letter-spacing:0;opacity:.95}
+@media(max-width:920px){
+  .opening-mantra .mantra-text-line{font-size:16px}
+  .mangalam-mantra .mantra-text-line{font-size:16px}
+  .final-mantra .mantra-text-line{font-size:13px}
+}
+@media(max-width:760px){.bride-welcome-card .family-mantra{font-size:16px;margin:18px auto 30px}.story .section-kicker,.story .eyebrow,.families>.eyebrow{font-size:11px}}
+
+/* Mute non-event Sanskrit inscriptions so they read like shallow stone carving. */
+.opening-mantra{color:#9c7956;opacity:.68}
+.opening-mantra .mantra-text-line{stroke:#30071155;stroke-width:.7;filter:drop-shadow(0 -1px 0 #f1d9a52a) drop-shadow(0 1px 0 #1d030933)}
+.story .section-scenery~svg.mangalam-mantra{color:#b3a181;opacity:.76}
+.mangalam-mantra .mantra-text-line{stroke:#6d5b4033;stroke-width:.55;filter:drop-shadow(0 -1px 0 #fffdf37a) drop-shadow(0 1px 0 #76644727)}
+.closing-card>.final-mantra{color:#a48a61;opacity:.58}
+.final-mantra .mantra-text-line{stroke:#33081245;stroke-width:.55;filter:drop-shadow(0 -1px 0 #f3dba52b) drop-shadow(0 1px 0 #1d030933)}
+.footer-mantra{color:#967653;opacity:.62}
+.footer-mantra .mantra-text-line{stroke:#23050b55;stroke-width:.65;filter:drop-shadow(0 -1px 0 #f1d9a52a) drop-shadow(0 1px 0 #1d030933)}
+.bride-welcome-card .family-mantra{color:#a39172;opacity:.78;text-shadow:0 -1px 0 #fff9ec9c,0 1px 0 #6c543627}
+
+/* Keep the inscriptions legible while blending their strokes into the existing arches. */
+.opening-mantra{color:#c4a36e!important;opacity:.86!important}
+.opening-mantra .mantra-text-line{stroke:#efb73477;stroke-width:.55;filter:drop-shadow(0 1px 1px #21050b88)}
+.story .section-scenery~svg.mangalam-mantra{color:#886b46!important;opacity:.9!important;overflow:visible!important}
+.mangalam-mantra .mantra-text-line{font-size:17px;stroke:#fff7e899;stroke-width:.45;filter:drop-shadow(0 1px 1px #4a07154d)}
+.bride-welcome-card svg.family-mantra{display:block;width:min(100%,760px);height:126px;max-width:760px;margin:14px auto 20px;color:#92734c;opacity:.9;overflow:visible}
+.family-mantra .mantra-text-line{font-size:16px;stroke:#fff8e8a6;stroke-width:.45;filter:drop-shadow(0 1px 1px #59432630)}
+.footer-mantra{color:#b69a67!important;opacity:.82!important}
+.footer-mantra .mantra-text-line{stroke:#2c081266;stroke-width:.55;filter:drop-shadow(0 -1px 0 #f2dfb44d) drop-shadow(0 1px 1px #1d030966)}
+.footer h2{font-size:30px;line-height:1.16}
+@media(max-width:760px){.footer h2{font-size:26px;line-height:1.15}}
+.footer-diya-divider{position:relative;z-index:1;display:block;width:min(54vw,900px);height:135px;object-fit:fill;margin:10px auto 7px;filter:drop-shadow(0 2px 6px #d8b56a28);pointer-events:none}
+@media(max-width:760px){.footer-diya-divider{width:min(88vw,620px);height:99px;margin:8px auto 6px}}
+.footer-ornaments{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.footer-peacock-feather{position:absolute;top:47%;width:clamp(82px,9vw,128px);height:auto;opacity:.34;filter:drop-shadow(0 0 9px #d4af6540)}
+.footer-peacock-left{left:4%}
+.footer-peacock-right{right:4%;transform:scaleX(-1)}
+.footer-colored-butterfly{position:absolute;width:30px;animation:butterfly-drift 7s ease-in-out infinite}
+.footer-butterfly-one{left:19%;top:34%;color:#e5bf6b}
+.footer-butterfly-two{right:18%;top:38%;color:#e990a8;animation-delay:1.1s}
+.footer-butterfly-three{left:22%;top:68%;width:25px;color:#72c4b0;animation-delay:2.2s}
+.footer-butterfly-four{right:22%;top:67%;width:27px;color:#afa1e5;animation-delay:3.3s}
+@media(max-width:760px){.footer-peacock-feather{width:62px;top:46%;opacity:.25}.footer-peacock-left{left:1%}.footer-peacock-right{right:1%}.footer-colored-butterfly{width:22px}.footer-butterfly-one{left:7%;top:34%}.footer-butterfly-two{right:7%;top:39%}.footer-butterfly-three{left:8%;top:68%;width:19px}.footer-butterfly-four{right:8%;top:68%;width:20px}.shagun-lakshmi-art{width:min(76vw,120px);margin:-4px auto 12px}}
+@media(max-width:760px){
+  .footer-peacock-feather{width:102px;opacity:.3}
+  .footer-peacock-left{left:calc(1% - 20px);transform:translateY(-90px)}
+  .footer-peacock-right{right:calc(1% - 20px);transform:scaleX(-1) translateY(-90px)}
+}
+.events .section-kicker{color:#67482d;border-color:#67482d36}
+.events .section-kicker span{color:#8a642f}
+@media(max-width:760px){
+  .bride-welcome-card svg.family-mantra{height:112px;margin:10px auto 16px}
+  .family-mantra .mantra-text-line{font-size:15px}
+  .mangalam-mantra .mantra-text-line{font-size:15px}
+}
+
+/* Move the Vishnu shloka to the welcome arch and keep the name preview from reflowing the cover. */
+.welcome .welcome-mangalam-mantra{color:#cbb279!important;opacity:.92!important}
+.welcome .welcome-mangalam-mantra .mantra-text-line{font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-weight:400;letter-spacing:.15px;word-spacing:3.3px;stroke:none;stroke-width:0;filter:none;paint-order:normal}
+.opening-mantra{overflow:visible!important}
+.guest-entry .guest-name-preview{display:block;width:100%;height:48px;min-height:48px;max-height:48px;margin:10px 0 0;overflow:hidden;font:11px/1.45 var(--serif);text-align:center}
+.guest-entry .guest-name-preview[aria-hidden="true"]{visibility:hidden}
+.guest-entry .guest-name-preview strong{display:inline;margin:0;color:#f3d98e;font:italic 17px/1.2 var(--serif);overflow-wrap:anywhere}
+@media(max-width:760px){
+  .guest-entry .guest-name-preview{height:46px;min-height:46px;max-height:46px;font-size:11px}
+  .guest-entry .guest-name-preview strong{font-size:15px}
+}
+
+/* Keep guest-name entry from changing the cover arch or its inscription scale. */
+.opening-mantra{overflow:hidden!important}
+.opening-mantra .mantra-text-line{font-family:'Mangal','Nirmala UI','Noto Serif Devanagari',sans-serif;font-size:18px;font-weight:400;font-kerning:normal;font-variant-ligatures:normal;font-feature-settings:normal;fill:currentColor;stroke:none;stroke-width:0;filter:none;paint-order:normal;letter-spacing:0;word-spacing:15.5px}
+.cover .cover-arch{border-width:3px}
+@media(max-width:760px){
+  .opening-mantra .mantra-text-line{font-size:16px;word-spacing:15px}
+}
+
+/* Improve event-shloka contrast only; preserve all event layout and sizing. */
+.journey-aside .event-wall-verse{color:#60401f;opacity:.9;text-shadow:0 1px 0 #fffaf0,0 0 1px #79593266}
+
+/* Deepen the Sanskrit engraving on the pale family card for clearer reading. */
+.bride-welcome-card svg.family-mantra{color:#68451f;opacity:1}
+.bride-welcome-card .family-mantra .mantra-text-line{stroke:#fff8e8a6;stroke-width:.45;filter:drop-shadow(0 1px 1px #33210d66)}
+
+/* Center the welcome shloka on the existing paired arch borders. */
+.families{position:relative;isolation:isolate}
+.families>svg.family-pillar-mantra{position:absolute!important;inset:0!important;z-index:2!important;display:block;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;color:#d0ad68!important;opacity:.82!important;overflow:hidden!important;pointer-events:none}
+.families>svg.family-pillar-mantra .mantra-text-line{font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-weight:400;fill:#d0ad68!important;stroke:none;stroke-width:0;filter:none;paint-order:normal}
+.families .bride-welcome-card{width:min(92%,700px);max-width:700px;padding:13px 34px 40px}
+.families .bride-welcome-card .bride-welcome-kicker{color:#70451e;text-shadow:0 1px 0 #fff9ed8c}
+.families .bride-welcome-card h3{margin:5px auto 4px;color:#390711}
+.families .bride-welcome-card>p{color:#493329;font-weight:500;line-height:1.38;text-shadow:0 1px 0 #fff9ed8c}
+.families>svg.family-pillar-mantra .mantra-text-line{font-size:32px}
+@media(max-width:760px){
+  .families .bride-welcome-card{width:min(94%,460px);padding:12px 18px 38px}
+  .families .bride-welcome-card>p{line-height:1.34}
+  .families>svg.family-pillar-mantra{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;overflow:hidden!important}
+  .families>svg.family-pillar-mantra .mantra-text-line{font-size:clamp(8px,calc(2.8vw - 2px),20px)}
+}
+
+/* Frame the family welcome with floral vines and replace the small bird with the supplied flute. */
+#family-section>.family-floral-vines{position:absolute!important;top:clamp(300px,32vh,380px);right:0;bottom:0;left:0;z-index:0!important;overflow:hidden;pointer-events:none}
+#family-section .family-floral-vine{position:absolute;top:0;bottom:0;width:clamp(30px,3vw,58px);background-image:url("/images/golden-flower-vine.png");background-position:center top;background-repeat:repeat-y;background-size:100% auto}
+#family-section .family-floral-vine-left{left:9.1vw}
+#family-section .family-floral-vine-right{right:9.1vw;transform:scaleX(-1)}
+#family-section .family-welcome-flute{display:block;width:min(448px,100%);max-height:200px;height:auto;object-fit:contain;margin:16px auto -16px;filter:drop-shadow(0 3px 4px #593b1720)}
+@media(max-width:760px){
+  #family-section>.family-floral-vines{top:clamp(340px,48vh,430px)}
+  #family-section .family-floral-vine{width:clamp(14px,3.4vw,26px)}
+  #family-section .family-floral-vine-left{left:9vw}
+  #family-section .family-floral-vine-right{right:9vw}
+  #family-section .family-welcome-flute{width:min(368px,100%);max-height:152px;margin:12px auto -18px}
+}
+
+/* Carry the supplied transparent floral garland along each event arch pipe. */
+.event-card>.event-arch-garland{position:absolute!important;z-index:0!important;inset:0!important;width:100%;height:100%;overflow:visible;pointer-events:none}
+
+/* Improve section-label contrast on the light invitation panels. */
+.events .section-kicker,.gallery .section-kicker,.families .section-kicker,.rsvp .section-kicker,.shagun .section-kicker{color:#4a0715;border-color:#4a071555;font-size:11px;font-weight:700;letter-spacing:.18em;text-shadow:0 1px 0 #fffaf0}
+.events .section-kicker span,.gallery .section-kicker span,.families .section-kicker span,.rsvp .section-kicker span,.shagun .section-kicker span{color:#765021}
+@media(max-width:760px){.events .section-kicker,.gallery .section-kicker,.families .section-kicker,.rsvp .section-kicker,.shagun .section-kicker{font-size:10px;letter-spacing:.14em}}
++
+
+/* Add a little garden life to the existing scenery layer without shifting page content. */
+.scenery-creature{animation:scenery-creature-float 8s ease-in-out infinite}
+.venue>.section-scenery::before,.families>.section-scenery::after{position:absolute;bottom:0;z-index:0;width:clamp(72px,9vw,118px);height:clamp(145px,18vw,220px);content:"";background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20120%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23b8955b%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M59%20207c4-42%202-73%200-108-2-34%209-59%2030-83M58%20157c-15-23-31-37-47-46m48%2062c14-24%2030-39%2049-50M58%20130c-10-15-20-23-33-30m34%2014c12-14%2022-22%2037-31%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M56%20207h14%22%20stroke-width%3D%224%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%238d9a70%22%20stroke%3D%22%23b8955b%22%20stroke-width%3D%221.4%22%3E%3Cellipse%20cx%3D%2231%22%20cy%3D%2294%22%20rx%3D%227%22%20ry%3D%2214%22%20transform%3D%22rotate(-42%2031%2094)%22%2F%3E%3Cellipse%20cx%3D%2217%22%20cy%3D%22107%22%20rx%3D%227%22%20ry%3D%2213%22%20transform%3D%22rotate(-55%2017%20107)%22%2F%3E%3Cellipse%20cx%3D%2294%22%20cy%3D%22129%22%20rx%3D%227%22%20ry%3D%2214%22%20transform%3D%22rotate(42%2094%20129)%22%2F%3E%3Cellipse%20cx%3D%22107%22%20cy%3D%22119%22%20rx%3D%227%22%20ry%3D%2213%22%20transform%3D%22rotate(55%20107%20119)%22%2F%3E%3Cellipse%20cx%3D%2237%22%20cy%3D%22101%22%20rx%3D%226%22%20ry%3D%2212%22%20transform%3D%22rotate(-48%2037%20101)%22%2F%3E%3Cellipse%20cx%3D%2287%22%20cy%3D%22112%22%20rx%3D%226%22%20ry%3D%2212%22%20transform%3D%22rotate(43%2087%20112)%22%2F%3E%3Cellipse%20cx%3D%2273%22%20cy%3D%2243%22%20rx%3D%227%22%20ry%3D%2214%22%20transform%3D%22rotate(36%2073%2043)%22%2F%3E%3Cellipse%20cx%3D%2282%22%20cy%3D%2228%22%20rx%3D%227%22%20ry%3D%2213%22%20transform%3D%22rotate(44%2082%2028)%22%2F%3E%3Cellipse%20cx%3D%2264%22%20cy%3D%2260%22%20rx%3D%226%22%20ry%3D%2212%22%20transform%3D%22rotate(25%2064%2060)%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23d8b66f%22%3E%3Ccircle%20cx%3D%2219%22%20cy%3D%2288%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22102%22%20cy%3D%22142%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%2291%22%20cy%3D%2218%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%22115%22%20r%3D%222.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:center bottom;background-size:contain;opacity:.48;transform-origin:50% 100%;animation:ornamental-tree-sway 8s ease-in-out infinite}
+.venue>.section-scenery::before{left:2.5%}
+.families>.section-scenery::after{right:2.5%;animation-delay:-2.8s}
+.scenery-petal::after{position:absolute;top:-.25em;right:-.45em;content:"✦";color:#f0d68e;font-size:.48em;opacity:.72;animation:petal-sparkle 4.4s ease-in-out infinite}
+.scenery-petal-two::after{animation-delay:1.7s}
+@keyframes scenery-creature-float{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@keyframes ornamental-tree-sway{0%,100%{rotate:-1.2deg}50%{rotate:1.2deg}}
+@keyframes petal-sparkle{0%,100%{opacity:.28;scale:.78}50%{opacity:.9;scale:1.12}}
+@media(max-width:760px){
+  .venue>.section-scenery::before,.families>.section-scenery::after{width:60px;height:120px;opacity:.36}
+  .venue>.section-scenery::before{left:.5%}
+  .families>.section-scenery::after{right:.5%}
+}
+@media(prefers-reduced-motion:reduce){
+  .scenery-creature,.venue>.section-scenery::before,.families>.section-scenery::after,.scenery-petal::after{animation:none!important}
+}
++
+
+/* RSVP response art appears only after a choice, without changing the form's content flow. */
+.rsvp-form{grid-template-columns:minmax(0,1fr)}
+.rsvp-form .full{grid-column:1}
+.rsvp-response-blessing{position:relative;z-index:1;display:grid;grid-template-columns:minmax(96px,136px) minmax(0,1fr) minmax(96px,136px);align-items:center;gap:18px;width:min(100%,760px);margin:28px auto 0;padding:17px 22px;border:1px solid #c8a05e9c;border-radius:42px 42px 12px 12px / 28px 28px 12px 12px;background:linear-gradient(145deg,#fffdf8 0%,#f5ead5 100%);box-shadow:inset 0 0 0 5px #fff9ed,0 12px 28px #4a071514;text-align:center;animation:rsvp-blessing-arrive .9s cubic-bezier(.16,1,.3,1) both;transform-origin:center top}
+.rsvp-namaskar-art{display:block;width:100%;max-width:88px;height:auto;margin:0 auto;overflow:visible;color:#9d7137}
+.rsvp-hands{fill:#ead3a0;stroke:#8a6038;stroke-width:2.2;stroke-linejoin:round}
+.rsvp-sleeves{fill:#8d2940;stroke:#d1a85e;stroke-width:2}
+.rsvp-aarti-flame{fill:#d9a83c;transform-box:fill-box;transform-origin:center bottom;animation:rsvp-diya-glow 1.7s ease-in-out infinite alternate}
+.rsvp-aarti-diya{fill:#b77938;stroke:#80552e;stroke-width:1.5;stroke-linejoin:round}
+.rsvp-aarti-plate{fill:#edd7a6;stroke:#98703b;stroke-width:2}
+.rsvp-plate-detail{fill:none;stroke:#b18749;stroke-width:1.4}
+.rsvp-plate-flower{fill:#a52d45}
+.rsvp-blessing-message{min-width:0;color:#4a0715}
+.rsvp-blessing-flourish{display:block;margin-bottom:7px;color:#b08a4d;font:14px/1 var(--serif);letter-spacing:.12em}
+.rsvp-atithi-side-art{display:block;width:100%;max-width:88px;height:auto;margin:0 auto;background:transparent;object-fit:contain;filter:drop-shadow(0 3px 5px #4a07151a)}
+.rsvp-response-blessing.rsvp-accepted-blessing{width:min(100%,700px)!important;max-width:700px!important}
+.rsvp-blessing-message p{margin:5px 0 0;font:16px/1.45 var(--serif);color:#634b3c}
+.rsvp-atithi-phrase-art{display:block;width:min(100%,360px);height:auto;margin:0 auto 7px;background:transparent;object-fit:contain}
+.rsvp-declined-blessing{border-color:#c39b8877;background:linear-gradient(145deg,#fffdfa 0%,#f3e8dc 100%)}
+.rsvp-declined-blessing .rsvp-blessing-flourish{color:#a87b69}
+.rsvp-declined-phrase-art{display:block;width:min(100%,360px);height:auto;margin:0 auto 4px;object-fit:contain}
+.rsvp-blessing-message .rsvp-declined-title{margin:0;color:#5b2630;font:500 clamp(20px,2.5vw,28px)/1.12 var(--serif)}
+.rsvp-distance-thali{display:block;width:100%;max-width:136px;height:auto;margin:auto;object-fit:contain;filter:drop-shadow(0 3px 5px #4a071522)}
+.rsvp-distance-thali-mirror{transform:scaleX(-1)}
+@keyframes rsvp-blessing-arrive{from{opacity:0;translate:0 16px;scale:.975;filter:blur(2px)}to{opacity:1;translate:0 0;scale:1;filter:blur(0)}}
+@keyframes rsvp-diya-glow{from{opacity:.72;scale:.86}to{opacity:1;scale:1.08}}
+@keyframes rsvp-flower-sway{0%,100%{rotate:-6deg;translate:0 0}50%{rotate:6deg;translate:0 -3px}}
+@media(max-width:760px){
+  .rsvp-response-blessing{grid-template-columns:82px minmax(0,1fr) 82px;gap:8px;margin-top:22px;padding:12px 9px;border-radius:28px 28px 10px 10px / 20px 20px 10px 10px}
+  .rsvp-namaskar-art{max-width:54px}
+  .rsvp-atithi-side-art{max-width:54px}
+  .rsvp-blessing-message p{font-size:14px}
+  .rsvp-blessing-flourish{font-size:12px}
+  .rsvp-distance-thali{max-width:82px}
+}
+@media(prefers-reduced-motion:reduce){
+  .rsvp-response-blessing,.rsvp-aarti-flame{animation:none!important}
+}
+
+/* Keep the RSVP form compact and let its response control use the available width. */
+.rsvp#rsvp .rsvp-form{width:min(100%,760px)!important;max-width:760px!important;grid-template-columns:minmax(0,1fr)!important;gap:18px}
+.rsvp#rsvp .rsvp-form>label{font-size:13px;gap:8px}
+.rsvp#rsvp .rsvp-form select[name="attendance"]{width:100%;height:52px;min-height:52px;padding:11px 16px;border:1px solid #bd9653;border-radius:7px;background:#fffefa;color:#4a0715;font:500 16px/1.2 var(--serif);box-shadow:inset 0 1px 3px #4a07150b}
+.rsvp#rsvp .rsvp-form select[name="attendance"]:focus{outline-offset:3px}
+.rsvp#rsvp .rsvp-form .full{grid-column:1}
+.rsvp-toran-line,.rsvp-toran-tassels{fill:none;stroke:#b58b48;stroke-width:1.7;stroke-linecap:round}
+.rsvp-toran-blooms{fill:#d6a747;stroke:#fff0bd;stroke-width:.8}
+.rsvp-thali-petals{fill:#d5a343;stroke:#fff0c7;stroke-width:.6}
+#rsvp.rsvp,.shagun#shagun{width:100%;min-width:0;padding:82px max(calc((100vw - 1050px)/2),8%) 72px;overflow:hidden}
+#rsvp.rsvp{background:#fff8ec}
+.rsvp-side-decorations{position:absolute;inset:0;z-index:2;pointer-events:none}
+.rsvp-side-woman,.rsvp-side-thali{position:absolute;display:block;height:auto;object-fit:contain;filter:drop-shadow(0 8px 14px #6b47151c)}
+.rsvp-side-woman{width:clamp(143px,calc(13vw + 15px),195px)}
+.rsvp-side-woman-right{right:calc(8% + 95px);top:calc(69% + 90px);transform:translateY(-50%)}
+.rsvp-side-thali{left:calc(8% + 50px);top:calc(69% + 145px);width:clamp(199px,calc(18vw + 25px),270px);transform:translateY(-50%)}
+.shagun#shagun{border-top:2px solid #d4af6570;background:#f3e9d6}
+.rsvp#rsvp .rsvp-form{width:min(100%,460px)!important;max-width:460px!important;margin-top:28px}
+.rsvp#rsvp .rsvp-form select[name="attendance"]{height:46px;min-height:46px;padding:9px 13px;font-size:15px}
+@media(max-width:760px){
+  .rsvp#rsvp .rsvp-form{width:100%!important;max-width:100%!important;gap:16px}
+  .rsvp#rsvp .rsvp-form select[name="attendance"]{height:50px;min-height:50px;padding:10px 14px;font-size:16px}
+}
+@media(max-width:980px){
+  #rsvp.rsvp,.shagun#shagun{padding:76px clamp(22px,7vw,64px) 56px}
+  .rsvp#rsvp .rsvp-form{width:min(100%,560px)!important;max-width:560px!important}
+}
+@media(max-width:760px){
+  #rsvp.rsvp,.shagun#shagun{padding:68px 7% 48px}
+  .rsvp#rsvp .rsvp-form select[name="attendance"]{height:48px;min-height:48px;font-size:15px}
+}
+@media(max-width:980px){.rsvp-side-decorations{display:none}}
+
+/* Keep the supplied portrait beneath the story headline, enlarged and left aligned. */
+.story .story-namaste-art{display:block;width:clamp(360px,31vw,460px);height:auto;margin:30px 0 0 -60px}
+@media(max-width:760px){
+  .story .story-namaste-art{width:min(calc(100vw - 40px),420px);margin:30px 0 0 -16px}
+}
+
+/* Flank the Vishnu welcome couple with the supplied transparent phera artwork. */
+#welcome>.welcome-phera-art{position:absolute;z-index:1;bottom:clamp(84px,calc(13vh - 12px),128px);width:clamp(160px,15vw,270px);height:auto;opacity:.58;pointer-events:none}
+#welcome>.welcome-phera-left{left:max(16px,calc(50% - 560px))}
+#welcome>.welcome-phera-right{right:max(16px,calc(50% - 560px));transform:scaleX(-1)}
+@media(max-width:760px){
+  #welcome>.welcome-phera-art{bottom:26px;width:clamp(68px,14vw,106px);opacity:.42}
+  #welcome>.welcome-phera-left{left:max(4px,calc(50% - 300px))}
+  #welcome>.welcome-phera-right{right:max(4px,calc(50% - 300px))}
+}
+@media(max-width:360px){
+  #welcome>.welcome-phera-art{display:none}
+}
+
+/* Frame the venue section with a generated pair of peacock feathers. */
+#venue>.venue-peacock-feathers{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+#venue .venue-peacock-feather{position:absolute;top:50%;width:clamp(130px,18vw,340px);max-height:72%;height:auto;object-fit:contain;opacity:.78;transform:translateY(-50%)}
+#venue .venue-peacock-left{left:max(12px,calc((100% - 1760px)/2))}
+#venue .venue-peacock-right{right:max(12px,calc((100% - 1760px)/2));transform:translateY(-50%) scaleX(-1)}
+@media(min-width:921px){
+  #venue .venue-peacock-lower-left,
+  #venue .venue-peacock-lower-right{top:auto;bottom:-49px;width:clamp(262px,calc(8vw + 190px),316px);max-height:350px;opacity:.58}
+  #venue .venue-peacock-lower-left{left:calc(24% - 180px);transform:rotate(-40deg)}
+  #venue .venue-peacock-lower-right{right:calc(24% - 180px);transform:scaleX(-1) rotate(-40deg)}
+}
+@media(max-width:760px){
+  #venue .venue-peacock-feather{top:auto;bottom:12px;width:clamp(82px,18vw,136px);max-height:200px;opacity:.36;transform:none}
+  #venue .venue-peacock-left{left:-12px}
+  #venue .venue-peacock-right{right:-12px;transform:scaleX(-1)}
+}
+
+/* Use the supplied diya flourish as a light, mirrored frame for the countdown. */
+#countdown>.countdown-lotus-flourishes{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+#countdown .countdown-lotus{position:absolute;width:clamp(240px,24vw,440px);height:auto;object-fit:contain;filter:drop-shadow(0 0 7px #edc96c99) drop-shadow(0 0 18px #e0ad3f55)}
+#countdown .countdown-lotus-top-right{top:-10px;right:-10px;transform:scaleX(-1)}
+#countdown .countdown-lotus-bottom-left{bottom:-10px;left:-10px}
+@media(max-width:760px){
+  #countdown .countdown-lotus{width:clamp(210px,54vw,330px);filter:drop-shadow(0 0 5px #edc96c88) drop-shadow(0 0 14px #e0ad3f44)}
+  #countdown .countdown-lotus-top-right{top:-10px;right:-10px}
+  #countdown .countdown-lotus-bottom-left{bottom:-10px;left:-10px}
+}
+
+
+/* Keep the couple names visibly calligraphic across the invitation's main headings. */
+.couple-name-accent{font-family:'Great Vibes','Cormorant Garamond',serif!important;font-style:normal!important;font-weight:400!important;letter-spacing:0!important;color:#f0cf7e!important;text-shadow:0 2px 12px #d4af6545}
+.cover-names .couple-name-accent{font-size:1.14em;line-height:1.05;text-shadow:0 3px 16px #d4af6550}
+.names-line .couple-name-accent{font-size:1.48em;line-height:1.1;color:#6d1027!important;text-shadow:0 1px 0 #d4af6540}
+.countdown .section-kicker .couple-name-accent{font-size:1.55em;line-height:1;color:#e4bf68!important;text-transform:none}
+.families h2 .couple-name-accent{font-size:1.18em;line-height:1;color:#f0cf7e!important}
+.closing-signature strong .couple-name-accent{font-size:1.42em;line-height:1;color:#f0cf7e!important}
+@media(max-width:760px){.cover-names .couple-name-accent{font-size:1.1em}.names-line .couple-name-accent{font-size:1.35em}.families h2 .couple-name-accent{font-size:1.08em}}
+
+/* The welcome panel is burgundy, so keep the couple names bright and unmistakable there. */
+.welcome .names-line{display:flex;align-items:baseline;justify-content:center;gap:8px;min-height:54px;color:var(--ivory)}
+.welcome .names-line .couple-name-accent{display:inline-block;visibility:visible;opacity:1;color:#f0cf7e!important;font-family:'Great Vibes','Cormorant Garamond',serif!important;font-size:clamp(42px,5.4vw,54px);font-style:normal!important;font-weight:400!important;line-height:1.12;text-shadow:0 2px 14px #d4af6560}
+@media(max-width:760px){.welcome .names-line .couple-name-accent{font-size:clamp(38px,9vw,48px)}}
+
+/* Improve the label contrast on the burgundy family section. */
+.families .section-kicker{color:#f1ddb0;border-color:#e8d8b570;text-shadow:0 1px 5px #31040d70}
+.families .section-kicker span{color:#f0cf7e}
+
+.nav-mark .nav-heart{display:inline-block;vertical-align:-1px;margin:0 2px;color:var(--gold);transform-origin:center;filter:drop-shadow(0 0 3px #d4af6570);animation:nav-heart-beat 1.8s ease-in-out infinite}
+@keyframes nav-heart-beat{0%,100%{transform:scale(1)}14%{transform:scale(1.18)}28%{transform:scale(1)}42%{transform:scale(1.12)}56%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.nav-mark .nav-heart{animation:none}}
+
+
+
+.guest-name-form .guest-share-button{width:100%;min-height:42px;display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #d4af65a8;border-radius:2px;background:#31040d66;color:#f0d68e;padding:10px 14px;font:600 10px 'DM Sans',sans-serif;letter-spacing:.14em;cursor:pointer;transition:background .2s,color .2s}
+.guest-name-form .guest-share-button:hover{background:#d4af6520;color:#fff8ec}
+.guest-name-form .guest-share-feedback{margin:2px auto 0;color:#e8d8b5;font:12px/1.45 'DM Sans',sans-serif;text-align:center}
+
+/* Fluid layouts for phones, tablets, and desktop widths. */
+html,body,#root{width:100%;min-width:0;max-width:100%}
+body{overflow-x:clip}
+img,svg,video,canvas{max-width:100%}
+.section-pad{padding-top:clamp(68px,9vw,115px);padding-bottom:clamp(68px,9vw,115px)}
+.cover{min-height:100svh;min-height:100dvh;padding:clamp(48px,7vh,76px) clamp(12px,4vw,28px) clamp(58px,8vh,82px)}
+.cover-arch{width:min(90vw,500px);min-height:clamp(650px,calc(100svh - 110px),760px);padding:clamp(68px,8vh,92px) clamp(17px,5vw,30px) 56px}
+.cover-names{font-size:clamp(43px,8vw,68px);line-height:.94;gap:clamp(8px,2vh,14px)}
+.cover-names i{font-size:clamp(23px,4vw,30px)}
+.guest-entry,.guest-name-form{width:min(100%,330px)}
+.welcome h1,.section-pad h2{font-size:clamp(38px,6.5vw,70px)}
+.welcome-copy,.story-text,.shagun-copy,.countdown-note,.family-welcome{font-size:clamp(15px,1.55vw,19px)}
+.story-grid{gap:clamp(28px,7vw,90px)}
+.clock-grid{grid-template-columns:repeat(4,minmax(0,120px));width:min(100%,540px);margin-inline:auto}
+.event-journey,.event-grid,.photo-grid,.family-row,.rsvp-form,.shagun-content{min-width:0}
+.event-card,.family-card,.shagun-card,.venue-card{min-width:0}
+.event-card h3[lang="hi"]{font-size:clamp(20px,2.3vw,27px)}
+.photo-slot img{max-width:none}
+.shagun-card.has-qr{grid-template-columns:minmax(0,1fr) minmax(0,280px);gap:clamp(14px,2vw,22px)}
+.qr-frame{width:min(100%,280px)}
+.rsvp-response-blessing{grid-template-columns:clamp(64px,10vw,96px) minmax(0,1fr) clamp(64px,10vw,96px);gap:clamp(8px,2vw,18px)}
+.rsvp-blessing-message{min-width:0;overflow-wrap:anywhere}
+.rsvp-response-blessing img{max-width:100%;height:auto}
+.site-nav nav{min-width:0;max-width:100%}
+.site-nav nav a,.nav-date{white-space:nowrap}
+button,.gold-button,.outline-button,.upi-open{touch-action:manipulation}
+
+@media(max-width:760px){
+  .section-pad{padding:clamp(62px,11vw,82px) clamp(18px,6vw,34px)}
+  .cover{padding:54px 12px 68px}
+  .cover-arch{width:min(94vw,460px);min-height:clamp(650px,calc(100svh - 92px),720px);padding:clamp(64px,9vh,78px) clamp(16px,5vw,24px) 48px}
+  .cover-names{font-size:clamp(42px,12.5vw,58px);margin:clamp(20px,4vh,28px) 0}
+  .cover-note{font-size:clamp(14px,4vw,16px)}
+  .guest-honoree{width:100%;padding-inline:clamp(8px,3vw,18px)}
+  .guest-name-form{max-width:100%}
+  .site-nav{padding-inline:clamp(12px,4vw,20px)}
+  .nav-mark{font-size:clamp(21px,6vw,26px)}
+  .nav-date{max-width:calc(100% - 100px);overflow:hidden;text-overflow:ellipsis;font-size:clamp(8px,2.4vw,10px)}
+  .welcome{min-height:max(660px,100svh)}
+  .welcome h1{font-size:clamp(39px,10vw,51px)}
+  .welcome .names-line{flex-wrap:wrap;gap:4px;min-height:0;margin:18px 0 8px}
+  .welcome .names-line .couple-name-accent{font-size:clamp(35px,9vw,48px)}
+  .countdown h2,.events h2,.gallery h2,.families h2,.rsvp h2{font-size:clamp(35px,9vw,45px)}
+  .clock-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(5px,2vw,9px)}
+  .clock-unit strong{font-size:clamp(28px,8vw,38px)}
+  .clock-unit span{font-size:clamp(7px,2vw,8px);letter-spacing:.12em}
+  .event-journey{padding-right:0}
+  .journey-step{grid-template-columns:clamp(42px,13vw,58px) minmax(0,1fr);gap:clamp(7px,2.5vw,12px)}
+  .journey-node{width:clamp(40px,12vw,48px);height:clamp(40px,12vw,48px);font-size:10px}
+  .journey-step:nth-child(odd) .event-card,.journey-step:nth-child(even) .event-card{padding:clamp(76px,20vw,92px) clamp(12px,4vw,18px) 20px}
+  .event-card{min-height:clamp(340px,100vw,410px)}
+  .event-card h3{font-size:clamp(24px,7vw,29px)}
+  .event-card h3[lang="hi"]{font-size:clamp(20px,6vw,25px)}
+  .event-card .event-note{font-size:clamp(13px,3.8vw,15px)}
+  .event-card .event-details{font-size:clamp(10px,2.8vw,11px)}
+  .photo-grid{grid-template-rows:clamp(160px,52vw,200px) clamp(140px,45vw,170px) clamp(130px,42vw,160px)}
+  .family-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .family-siblings{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .family-card{min-height:clamp(275px,84vw,330px)}
+  .venue-card{flex-wrap:wrap}
+  .venue-card .gold-button{max-width:100%;white-space:normal}
+  .shagun-card.has-qr{display:block;width:100%;max-width:500px}
+  .shagun-card.has-qr .payment-qr{width:100%;margin-top:20px;padding-top:0}
+  .payment-qr .qr-frame{width:min(100%,280px)}
+  .scan-instruction{max-width:100%;font-size:clamp(14px,4vw,15px)}
+  .rsvp-response-blessing{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 12px;padding:12px clamp(10px,4vw,20px)}
+  .rsvp-response-blessing>.rsvp-blessing-message{grid-column:1/-1;grid-row:2}
+  .rsvp-response-blessing>:first-child{grid-column:1;grid-row:1}
+  .rsvp-response-blessing>:last-child{grid-column:2;grid-row:1}
+  .rsvp-atithi-side-art,.rsvp-distance-thali{width:auto;max-height:clamp(58px,18vw,82px);object-fit:contain}
+  .rsvp-response-blessing .rsvp-blessing-message p{font-size:clamp(13px,3.8vw,15px)}
+  .footer h2{font-size:clamp(25px,7vw,30px)}
+  .footer-diya-divider{height:auto;max-height:99px;object-fit:contain}
+}
+
+@media(max-width:420px){
+  .section-pad{padding-inline:16px}
+  .section-kicker{font-size:9px;letter-spacing:.12em;gap:10px}
+  .section-kicker span{flex:none}
+  .clock-grid{gap:5px}
+  .clock-unit{padding:12px 2px}
+  .clock-unit span{letter-spacing:.08em}
+  .event-journey::before{left:22px}
+  .journey-step{grid-template-columns:42px minmax(0,1fr);gap:7px}
+  .journey-node{width:38px;height:38px;box-shadow:0 0 0 5px #f3ead5}
+  .event-card{min-height:350px}
+  .family-grid.family-only{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .family-grid.family-only .family-card:last-child{grid-column:1/-1}
+  .shagun-card{padding:clamp(16px,5vw,20px) clamp(12px,4vw,16px)}
+  .shagun-entry>label{padding-right:0}
+  .share-actions{gap:7px}
+  .share-actions>*{min-width:0;padding-inline:8px;font-size:9px}
+  .rsvp-response-blessing{gap:3px 8px}
+  .footer-bottom{flex-wrap:wrap;line-height:1.6}
+}
+
+@media(max-height:620px) and (orientation:landscape){
+  .cover{min-height:680px}
+  .cover-arch{min-height:590px;padding-top:55px;padding-bottom:38px}
+  .mandala{font-size:30px;margin-bottom:18px}
+  .cover-names{margin:18px 0}
+}
+
+.footer h2.footer-closing-message{font-size:clamp(22px,2.4vw,27px);line-height:1.2}
+@media(max-width:760px){.footer h2.footer-closing-message{font-size:clamp(20px,5.6vw,24px);line-height:1.2}}
+@media(min-width:761px){.footer h2.footer-closing-message{margin-top:65px}}
+@media(min-width:761px){
+  .footer{padding-top:35px;padding-bottom:8px}
+  .footer-flourish{margin-bottom:12px}
+  .footer h2.footer-closing-message{margin-bottom:15px}
+  .footer-diya-divider{height:110px}
+  .footer-sign{margin:10px 0}
+  .footer-date{margin:10px}
+  .footer-bottom{margin-top:20px}
+}
+
+/* Mobile welcome shloka follows one broad arch; desktop keeps its original layout. */
+@media(max-width:760px){
+  #welcome>svg.welcome-mangalam-mantra{
+    display:none!important;
+  }
+  #welcome>.welcome-mantra-mobile{
+    display:grid!important;
+    position:relative;
+    z-index:2;
+    flex:none;
+    width:min(100%,500px);
+    margin:0 auto 14px;
+    padding:0 8px;
+    gap:5px;
+    color:#e3c779;
+    font-size:calc(clamp(13px,3.6vw,16px) + 4px);
+    line-height:1.7;
+    text-align:center;
+    text-shadow:0 1px 3px #21050b80;
+    background:none;
+    border:0;
+    box-shadow:none;
+  }
+}
+
+/* Correct narrow-screen grid placement for the event and family sections. */
+@media(max-width:760px){
+  html,body{width:100%;overflow-x:clip;}
+  #events{max-width:100vw;overflow-x:clip;}
+  #events .journey-step{position:relative;left:-20px;width:100%;min-width:0;grid-template-columns:48px minmax(0,1fr);}
+  .journey-step>.event-card{grid-column:2!important;grid-row:1!important;justify-self:stretch!important;width:100%!important;min-width:0!important;}
+  .journey-step>.journey-aside{grid-column:2!important;grid-row:2!important;width:100%;min-width:0;}
+  .family-parents .family-card:last-child,.family-siblings .family-card:last-child{grid-column:auto!important;}
+  /* Keep the speaker control in the top header row, clear of the scroll links. */
+  .site-nav{position:sticky!important;top:0!important;z-index:30!important;min-height:60px;padding:0 8px!important;display:flex!important;align-items:center;flex-wrap:nowrap;}
+  .site-nav .nav-mark{display:flex;align-items:center;flex:0 0 auto;font-size:19px;line-height:1;margin-right:7.5px;}
+  .site-nav .nav-date{display:none;}
+  .site-nav nav{order:initial;display:flex!important;flex:1 1 auto;min-width:0;width:auto;height:60px;padding:0!important;align-items:center;gap:clamp(5.5px,calc(1.5vw + .5px),7.5px);overflow-x:auto;scrollbar-width:none;}
+  .site-nav nav a{font-size:9px;letter-spacing:.05em;flex:0 0 auto;}
+  .site-nav .music-toggle{position:static!important;flex:0 0 23px;margin-left:8.5px;width:23px!important;height:23px!important;min-width:23px!important;min-height:23px!important;padding:2px!important;border-radius:50%;}
+  .music-toggle svg{width:20px!important;height:20px!important;}
+  /* Keep architectural decoration behind copy instead of competing with it. */
+  .event-card>.mandap-arch{opacity:.25!important;}
+  .event-card>.event-arch-garland{opacity:.32!important;}
+  /* Make the family illustration a small, intentional card flourish. */
+  #family-section .family-welcome-flute{width:min(78vw,280px);max-height:104px;margin:14px auto 0;opacity:.92;}
+  .families .bride-welcome-card{padding-bottom:18px;}
+  /* The footer shloka sits in its own calm line block on phones, never over the message. */
+  .footer>svg.footer-mantra{display:none!important;}
+  .cover-arch>svg.opening-mantra{display:none!important;}
+  .welcome>svg.welcome-mangalam-mantra{display:none!important;}
+  .welcome>.welcome-mantra-mobile{display:grid!important;}
+  .mantra-mobile-lines{display:grid;gap:3px;width:min(100%,520px);margin:0 auto 18px;padding:8px 8px;color:#d4b56f;font:clamp(12px,3.3vw,15px)/1.65 'Noto Serif Devanagari','Nirmala UI','Mangal',serif;text-align:center;text-shadow:0 1px 3px #21050b80;white-space:normal;}
+  .mantra-mobile-lines>span{display:block;}
+  .cover-arch>.opening-mantra-mobile{position:relative;z-index:3;flex:none;width:min(100%,420px);margin:0 auto 13px;padding:8px 5px 10px;border-block:1px solid #d4af6550;color:#e3c779;font-size:clamp(11px,3vw,14px);line-height:1.55;}
+  .welcome>.welcome-mantra-mobile{position:relative;z-index:2;flex:none;width:min(100%,500px);margin:0 auto 14px;padding:7px 5px;border-block:1px solid #d4af6538;color:#d9bd79;font-size:clamp(11px,3vw,14px);line-height:1.55;}
+  .footer .footer-mantra-mobile{position:relative;z-index:2;gap:3px;width:min(100%,520px);margin:0 auto 18px;padding:0 8px;color:#d4b56f;}
+  .journey-aside .event-wall-verse{align-self:center;width:100%;max-width:none;min-width:0;padding:0;border:0;background:none;font-size:clamp(9px,2.5vw,11px);line-height:1.55;text-align:center;opacity:.96;overflow-wrap:anywhere;}
+  .journey-step>.journey-aside{display:grid!important;grid-template-columns:clamp(58px,20vw,78px) minmax(0,1fr);grid-column:2!important;grid-row:2!important;justify-self:stretch;width:100%;max-width:100%;min-width:0;gap:clamp(8px,2vw,12px);margin:10px 0 2px;padding-inline:2px;}
+  .story-grid{row-gap:clamp(14px,4vw,22px);}
+  .story .story-namaste-art{width:min(80vw,360px);max-height:none;object-fit:contain;margin:8px auto 0;opacity:.96;filter:drop-shadow(0 5px 12px #4a07151a);}
+}
+.mantra-mobile-lines{display:none;}
+@media(max-width:760px){.mantra-mobile-lines{display:grid;}}
+
+@media(min-width:761px){.footer>svg.footer-mantra{transform:translateY(-16px);}}
+
+/* Keep every mobile card and its contents within the visible frame. */
+@media(max-width:760px){
+  .event-card,.family-card,.bride-welcome-card,.venue-card,.rsvp-form,.shagun-card,.photo-slot,.closing-card{
+    box-sizing:border-box;
+    min-width:0;
+    max-width:100%;
+    overflow:hidden;
+  }
+  .event-card,.family-card,.venue-card,.rsvp-form,.shagun-card,.photo-slot,.closing-card{width:100%;}
+  .event-journey,.journey-step,.family-row,.family-grid,.photo-grid,.story-grid,.shagun-content{width:100%;min-width:0;max-width:100%;}
+  .family-row,.family-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .journey-step{grid-template-columns:clamp(36px,11vw,46px) minmax(0,1fr);gap:8px;padding-inline:0;}
+  .journey-step>.event-card{grid-column:2;justify-self:stretch;width:100%;}
+  .event-card h3,.event-card p,.event-card a,.family-card h3,.family-card p,.venue-card h3,.venue-card p,.rsvp-form label,.shagun-card p{min-width:0;max-width:100%;overflow-wrap:anywhere;}
+  .event-card .event-details span{overflow-wrap:anywhere;}
+  .family-card{padding-inline:clamp(8px,3vw,14px);}
+  .rsvp-form::after{top:8px;}
+  .venue-card .gold-button,.rsvp-form button,.shagun-card button{min-width:0;max-width:100%;white-space:normal;}
+  .event-card img,.family-card img,.bride-welcome-card img,.venue-card img,.rsvp-form img,.shagun-card img,.photo-slot img,.closing-card img{max-width:100%;}
+}
+
+/* Mobile mantras retain the laptop palette and typography without added rules or panels. */
+@media(max-width:760px){
+  .mantra-mobile-lines{gap:2px;padding:0 5px;background:none;border:0;box-shadow:none;color:#d4b56f;font-size:clamp(10px,2.9vw,12px);line-height:1.65;text-shadow:0 1px 3px #21050b80;}
+  .cover-arch>.opening-mantra-mobile,.welcome>.welcome-mantra-mobile{border:0;border-block:0;background:none;box-shadow:none;}
+  .cover-arch>.opening-mantra-mobile{width:min(100%,420px);font-size:calc(clamp(10px,2.8vw,12px) + 8px);line-height:1.55;}
+  .welcome>.welcome-mantra-mobile{width:min(100%,420px);font-size:clamp(10px,2.8vw,12px);line-height:1.55;}
+  .journey-aside .event-wall-verse{width:100%;max-width:none;padding:0;font-size:clamp(9px,2.4vw,10px);line-height:1.5;text-align:center;white-space:pre-line;overflow-wrap:anywhere;}
+  .welcome>svg.welcome-mangalam-mantra{display:none!important;}
+  .footer .footer-mantra-mobile{font-size:calc(clamp(10px,2.8vw,12px) + 8px);line-height:1.55;}
+}
+
+/* Align the venue directions action to the right on phones only. */
+@media(max-width:760px){
+  .venue-card>.gold-button{margin-left:auto!important;align-self:flex-end;}
+}
+
+/* Keep the family note text inside the narrow mobile/tablet story column. */
+@media(max-width:900px){
+  #story .story-grid{grid-template-columns:minmax(0,1fr);width:100%;max-width:100%;gap:clamp(16px,4vw,28px);}
+  #story .story-grid>div,#story .story-text,#story .story-text p{width:100%;min-width:0;max-width:100%;}
+  #story h2{max-width:100%;font-size:clamp(38px,9vw,54px);line-height:1.02;overflow-wrap:break-word;}
+  #story .story-text{font-size:clamp(15px,3.8vw,18px);line-height:1.6;overflow-wrap:anywhere;}
+}
+
+/* Compact event cards on phones so the matching shloka below stays visible. */
+@media(max-width:760px){
+  .journey-step:nth-child(odd)>.event-card,.journey-step:nth-child(even)>.event-card{
+    min-height:clamp(285px,76vw,330px)!important;
+    width:min(100%,max(110px,calc(100% - clamp(46px,20vw,78px) - 160px)))!important;
+    justify-self:center!important;
+    padding:clamp(58px,15vw,70px) clamp(14px,4vw,20px) 18px!important;
+  }
+  .event-card .event-icon{margin:0 0 3px;font-size:23px;}
+  .event-card h3[lang="hi"]{margin:4px 0 5px;font-size:clamp(20px,5.8vw,24px);}
+  .event-card .event-note{margin:4px 0 8px;font-size:clamp(12px,3.4vw,14px);line-height:1.42;}
+  .event-card .event-details{padding-top:3px;}
+  .journey-step:first-child>.event-card{margin-top:12px;}
+  .journey-aside .event-wall-verse{font-size:clamp(11px,3vw,13px);font-weight:600;line-height:1.6;color:#51391f;opacity:1;text-shadow:0 1px 0 #fffaf0,0 0 1px #79593266;}
+}
+
+/* Keep the family cards between the side floral borders on narrow screens. */
+@media(max-width:900px){
+  #family-section .family-row{width:calc(100% - clamp(56px,16vw,128px));max-width:100%;margin-inline:auto;}
+  #family-section .family-row>.family-card{width:100%;min-width:0;}
+}
+
+/* Align the venue details and directions button cleanly on mobile. */
+@media(max-width:760px){
+  #venue .venue-card{display:grid!important;width:min(100%,max(280px,calc(100% - clamp(28px,12vw,54px) - 80px)))!important;max-width:620px;margin-inline:auto;grid-template-columns:22px minmax(0,1fr) max-content;align-items:center;gap:7px 8px;padding:14px!important;text-align:left;}
+  #venue .venue-card>svg{grid-column:1;grid-row:1;align-self:center;margin:0;}
+  #venue .venue-card>div{grid-column:2;grid-row:1;min-width:0;width:100%;}
+  #venue .venue-card>.gold-button{grid-column:3;grid-row:1;justify-self:end;margin:0!important;padding:10px 11px;font-size:clamp(8px,2.2vw,9px);white-space:nowrap;}
+  #family-section .bride-welcome-card{width:min(calc(94% - 80px),380px);min-width:min(220px,100%);margin-inline:auto;}
+}
+
+/* Keep the story heading and copy inside the decorative inner frame on mobile. */
+@media(max-width:900px){
+  #story>.section-kicker{width:calc(100% - clamp(76px,16vw,130px));margin-inline:auto;}
+  #story .story-grid{width:calc(100% - clamp(76px,16vw,130px));max-width:100%;margin-inline:auto;}
+  #story .story-grid>div,#story .story-text,#story .story-text p{min-width:0;max-width:100%;}
+  #story .story-grid>div:first-child>.eyebrow{width:calc(100% - 48px);margin-inline:auto;text-align:center;}
+  #story h2{width:calc(100% - 48px);max-width:100%;margin-inline:auto;text-align:center;font-size:clamp(32px,7.5vw,46px);line-height:1;overflow-wrap:anywhere;}
+  #story .story-text{overflow-wrap:anywhere;}
+  #story .story-namaste-art{width:min(100%,360px);margin:18px auto 0;}
+}
+
+/* Keep the welcome procession artwork inside the frame on mobile and tablet widths. */
+@media(max-width:900px){
+  #welcome>.welcome-phera-art{bottom:clamp(48px,8vh,66px);width:clamp(96px,17vw,136px);opacity:.42;}
+  #welcome>.welcome-phera-left{left:clamp(48px,12vw,92px);}
+  #welcome>.welcome-phera-right{right:clamp(48px,12vw,92px);}
+}
+
+/* Give the Haldi event extra breathing room and narrow all event cards on mobile. */
+@media(max-width:900px){
+  #events>.eyebrow,#events>h2,#events>.event-intro{position:relative;top:auto;z-index:2;width:min(100%,calc(100% - clamp(36px,12vw,90px)));margin-inline:auto;text-align:center;}
+  #events>.eyebrow{margin-top:0;margin-bottom:clamp(24px,5vw,40px);}
+  #events>h2{margin-top:0;margin-bottom:clamp(8px,2vw,14px);}
+  #events>.event-intro{margin-top:0;margin-bottom:0;}
+  #events .journey-aside .event-wall-verse{font-size:calc(clamp(11px,3vw,13px) + 5px);}
+  .journey-step>.event-card{width:min(100%,max(110px,calc(100% - clamp(46px,20vw,78px) - 160px)))!important;}
+  #events .journey-step>.journey-aside{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-column:2!important;grid-row:1!important;width:min(100%,max(110px,calc(100% - clamp(46px,20vw,78px) - 160px)))!important;margin:10px auto 2px!important;gap:6px;}
+  #events .journey-aside .journey-mascot{grid-column:1;grid-row:1;width:clamp(70px,20vw,92px);min-height:82px;margin:0 auto;}
+  #events .journey-aside .event-wall-verse{grid-column:1;grid-row:2;width:100%;text-align:center;}
+  #events .journey-step>.event-card{grid-column:2!important;grid-row:2!important;justify-self:center!important;padding-inline:12px!important;}
+  #events .event-card .event-note{max-width:100%;font-size:clamp(13px,3.7vw,15px);line-height:1.45;color:#473129;font-weight:500;text-shadow:0 1px 0 #fffaf0;overflow-wrap:anywhere;}
+  #events .event-card .event-details{width:100%;font-size:clamp(11px,3vw,12px);line-height:1.5;color:#493329;text-align:center;overflow-wrap:anywhere;}
+  #events .event-card h3[lang="hi"]{color:#390711;font-weight:700;}
+  #events .event-card .event-number{max-width:60%;white-space:normal;text-align:center;}
+  #events .event-card h3[lang="hi"],#events .event-card .event-note,#events .event-card .event-details,#events .event-card>a{margin-inline:auto;text-align:center;overflow-wrap:anywhere;}
+  #events .event-card h3[lang="hi"]{width:100%;max-width:60%;}
+  #events .event-card .event-note{width:100%;max-width:68%;}
+  #events .event-card .event-details{width:100%;max-width:72%;}
+  #events .event-card>a{max-width:68%;justify-content:center;}
+  #events .journey-step:first-child>.event-card{margin-top:12px!important;}
+}
+
+/* Keep the family welcome card clear of the mobile arch frame. */
+@media(max-width:900px){
+  #family-section .bride-welcome-card{width:min(calc(94% - 20px),440px)!important;margin-top:27px!important;}
+}
+@media(max-width:760px){
+  #family-section .bride-welcome-card{width:min(calc(94% - 100px),360px)!important;margin-top:27px!important;}
+}
+
+/* Inset the family member cards by 10px on every side on mobile. */
+@media(max-width:900px){
+  #family-section .family-row>.family-card{width:calc(100% - 20px);min-height:calc(clamp(275px,84vw,330px) - 20px);margin:10px auto;}
+}
+
+/* Mobile-only layout fixes from the phone screenshots. */
+@media(min-width:761px){
+  .site-nav .nav-date{display:none!important;}
+}
+@media(max-width:760px){
+  #events>.event-feather-layer{z-index:2;overflow:visible;}
+  #events>.event-feather-layer .event-peacock-feather-right-mid{top:58%;transform:rotate(5deg)!important;}
+  #events>.event-feather-layer .event-peacock-feather-left-lower{left:-1%;transform:translateX(23px) rotate(-7deg)!important;}
+  #events>.event-feather-layer .event-peacock-feather-right-lower{right:10px;top:79%;transform:translateY(-80px) scaleX(-1) rotate(-7deg)!important;}
+  #events>.event-feather-layer .event-peacock-feather-left-mid{left:calc(-3% - 30px);transform-origin:50% 100%;transform:scaleX(-1) rotate(-45deg)!important;}
+  #events .journey-step:nth-child(2) .event-row-peacock-feather{
+    display:block;
+    position:absolute;
+    z-index:3;
+    top:55%;
+    right:-10px;
+    width:calc(clamp(62px,18vw,76px) + 20px);
+    max-height:110px;
+    height:auto;
+    transform:scaleX(-1);
+    pointer-events:none;
+  }
+  #events .journey-step:nth-child(3) .event-row-peacock-feather{
+    display:block;
+    position:absolute;
+    z-index:3;
+    top:55%;
+    left:10px;
+    width:calc(clamp(62px,18vw,76px) + 28px);
+    max-height:110px;
+    height:auto;
+    transform:scaleX(-1);
+    pointer-events:none;
+  }
+  #events .haldi-step>.haldi-card-peacock-feather{
+    position:absolute;
+    z-index:3;
+    top:auto;
+    bottom:44px;
+    left:16px;
+    width:calc(clamp(68px,20vw,92px) + 20px);
+    height:auto;
+    opacity:.96;
+    filter:drop-shadow(0 3px 7px #30040d40);
+    transform:rotate(-12deg);
+    pointer-events:none;
+  }
+  #events .pagfera-step>.event-card-peacock-feather{
+    position:absolute;
+    z-index:3;
+    top:55%;
+    left:27px;
+    width:clamp(92px,25vw,140px);
+    height:auto;
+    opacity:.96;
+    filter:drop-shadow(0 3px 7px #30040d40);
+    transform:rotate(8deg);
+    pointer-events:none;
+  }
+  #events .pagfera-step>.event-card-peacock-feather-right{
+    left:auto;
+    right:-15px;
+    transform:scaleX(-1) rotate(3deg);
+  }
+  #events .event-feather-layer .event-peacock-feather{z-index:2;}
+  #events .journey-step{z-index:1;}
+  #venue .venue-card{
+    width:100%!important;
+    grid-template-columns:24px minmax(0,1fr);
+    gap:8px 10px;
+    padding:14px!important;
+  }
+  #venue .venue-card>svg{grid-column:1;grid-row:1;}
+  #venue .venue-card>div{grid-column:2;grid-row:1;}
+  #venue .venue-card>.gold-button{
+    grid-column:2;
+    grid-row:2;
+    justify-self:end;
+    margin:4px 0 0!important;
+  }
+  #venue .venue-card h3{font-size:clamp(20px,6vw,25px);overflow-wrap:normal;}
+  #venue .venue-note{max-width:100%;padding-inline:8px;font-size:clamp(14px,4vw,16px);line-height:1.5;}
+
+  #events .journey-step>.journey-aside,
+  #events .journey-step>.event-card{
+    width:100%!important;
+    max-width:100%!important;
+    justify-self:stretch!important;
+  }
+  #events .journey-aside .event-wall-verse{
+    width:100%;
+    font-size:clamp(10px,3.2vw,12px)!important;
+    line-height:1.65;
+    white-space:pre;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+
+  #family-section .family-row{
+    width:min(100%,calc(100% - clamp(40px,10vw,72px)));
+    gap:8px;
+  }
+  #family-section .family-row>.family-card{
+    width:100%;
+    min-height:clamp(275px,78vw,320px);
+    margin:0 auto;
+    padding-inline:10px;
+  }
+}
+
+/* Give the Rooted in Love family section a calmer, readable phone layout. */
+@media(max-width:600px){
+  #family-section .bride-welcome-card{
+    width:min(calc(100% - clamp(28px,8vw,48px)),440px)!important;
+    min-width:0;
+    padding:30px 20px 76px;
+  }
+  #family-section .family-row{
+    width:min(100%,calc(100% - clamp(68px,19vw,100px)));
+    grid-template-columns:minmax(0,1fr);
+    gap:14px;
+  }
+  #family-section .family-row-heading{
+    width:calc(100% - clamp(56px,16vw,76px));
+    max-width:380px;
+    box-sizing:border-box;
+    padding-inline:2px;
+    margin:30px auto 14px;
+    line-height:1.35;
+    text-wrap:balance;
+    overflow-wrap:anywhere;
+  }
+  #family-section .family-row>.family-card{
+    display:grid;
+    grid-template-columns:58px minmax(0,1fr) 58px;
+    grid-template-rows:auto auto auto;
+    align-items:center;
+    justify-items:center;
+    box-sizing:border-box;
+    width:calc(100% - 4px);
+    min-height:250px;
+    height:auto;
+    padding:24px 20px 26px;
+  }
+  #family-section .family-card-butterfly{
+    position:relative;
+    z-index:2;
+    top:auto;
+    left:auto;
+    display:block;
+    width:36px;
+    height:32px;
+    grid-column:3;
+    grid-row:1;
+    justify-self:center;
+    margin:0;
+    animation:butterfly-drift 4.5s ease-in-out infinite;
+  }
+  #family-section .family-card .family-flower{grid-column:1;grid-row:1;justify-self:center;}
+  #family-section .family-card h3{grid-column:2;grid-row:1;margin:0!important;text-align:center;font-size:clamp(20px,5.8vw,24px)!important;}
+  #family-section .family-card .family-relationship{grid-column:1/-1;grid-row:2;}
+  #family-section .family-card .family-note{grid-column:1/-1;grid-row:3;}
+  #family-section .family-parents>.family-card:nth-child(1) .family-card-butterfly{color:#f2cf75;}
+  #family-section .family-parents>.family-card:nth-child(2) .family-card-butterfly{color:#e7a8c4;animation-delay:-1.1s;}
+  #family-section .family-siblings>.family-card:nth-child(1) .family-card-butterfly{color:#92d5c4;animation-delay:-.6s;}
+  #family-section .family-siblings>.family-card:nth-child(2) .family-card-butterfly{color:#f1a078;animation-delay:-1.5s;}
+  #family-section .family-siblings>.family-card:nth-child(3) .family-card-butterfly{color:#9dc9f0;animation-delay:-2.2s;}
+  #family-section .family-siblings>.family-card:nth-child(4) .family-card-butterfly{color:#d2a7f2;animation-delay:-3s;}
+  #family-section .family-card h3{
+    max-width:100%;
+    font-size:clamp(22px,6.5vw,27px)!important;
+    overflow-wrap:normal;
+    word-break:normal;
+    text-align:center;
+  }
+  #family-section .family-card .family-note{
+    width:100%;
+    max-width:420px;
+    font-size:clamp(15px,4vw,17px);
+    line-height:1.55;
+    overflow-wrap:anywhere;
+    word-break:normal;
+    text-align:center;
+  }
+  #family-section .bride-welcome-card{
+    width:min(calc(100% - clamp(68px,19vw,100px) - 10px),440px)!important;
+    box-sizing:border-box;
+    overflow:hidden;
+    padding:24px 18px 20px;
+    border:1px solid #d8c493;
+    outline:1px solid #d8c49355;
+    outline-offset:-7px;
+    border-radius:24px 34px 18px 34px;
+  }
+  #family-section .bride-welcome-card .bride-welcome-kicker,
+  #family-section .bride-welcome-card h3,
+  #family-section .bride-welcome-card>p{
+    width:100%;
+    max-width:100%;
+    overflow-wrap:anywhere;
+    box-sizing:border-box;
+  }
+  #family-section .bride-welcome-card h3{
+    font-size:clamp(24px,7vw,30px);
+    line-height:1.15;
+  }
+  #family-section .bride-welcome-card>p{
+    padding-inline:5px;
+    font-size:clamp(15px,4vw,17px);
+    line-height:1.5;
+  }
+  #family-section .bride-welcome-card::before{content:none;}
+  #family-section .welcome-border-flower{width:9.5px;height:9.5px;}
+}
+
+/* Center the venue details between the peacock feathers on mobile, with a separate display style for the first headline line. */
+@media(max-width:760px){
+  #venue h2{
+    max-width:100%;
+    padding-inline:8px;
+    font-size:clamp(38px,9.5vw,48px);
+    line-height:.96;
+    text-wrap:balance;
+  }
+  #venue .venue-heading-first{
+    display:inline-block;
+    font-size:.8em;
+    font-variant:small-caps;
+    font-weight:600;
+    letter-spacing:.075em;
+    line-height:1.05;
+    color:#fff8ec;
+    padding-bottom:3px;
+    border-bottom:1px solid #d4af65a6;
+  }
+  #venue .venue-welcome{
+    width:min(100%,520px);
+    margin-inline:auto;
+    padding-inline:12px;
+    box-sizing:border-box;
+    text-wrap:balance;
+    overflow-wrap:anywhere;
+  }
+  #venue .venue-card{
+    display:grid!important;
+    width:min(100%,390px)!important;
+    max-width:calc(100% - 32px);
+    margin-inline:auto;
+    grid-template-columns:minmax(0,1fr);
+    justify-items:center;
+    gap:8px;
+    padding:16px!important;
+    box-sizing:border-box;
+    text-align:center;
+  }
+  #venue .venue-card>svg{grid-column:1;grid-row:1;justify-self:center;}
+  #venue .venue-card>div{grid-column:1;grid-row:2;width:100%;min-width:0;text-align:center;}
+  #venue .venue-card h3{font-size:clamp(19px,5.6vw,25px);line-height:1.1;text-align:center;overflow-wrap:anywhere;}
+  #venue .venue-card p{font-size:12px;line-height:1.3;text-align:center;overflow-wrap:anywhere;}
+  #venue .venue-card>.gold-button{grid-column:1;grid-row:3;justify-self:center;margin:3px 0 0!important;white-space:nowrap;}
+}
+
+/* Improve event-card text contrast and give the copy more usable width. */
+.event-card .event-note{max-width:260px;color:#493329;font-size:15px;font-weight:500;line-height:1.55;}
+.event-card .event-details{font-size:12px;font-weight:500;line-height:1.6;color:#493329;}
+.event-card>a{font-size:11px;font-weight:600;color:#704914;}
+@media(max-width:900px){
+  #events .event-card h3[lang="hi"]{width:100%;max-width:84%;font-size:clamp(21px,6vw,25px);line-height:1.25;}
+  #events .event-card .event-note{width:100%;max-width:94%;font-size:clamp(14px,3.9vw,16px);line-height:1.5;color:#38271f;font-weight:600;}
+  #events .event-card .event-details{width:100%;max-width:94%;font-size:clamp(12px,3.2vw,13px);line-height:1.55;color:#38271f;font-weight:600;}
+  #events .event-card>a{width:100%;max-width:94%;font-size:11px;font-weight:700;color:#704914;}
+}
+
+/* Keep the venue closing note inside the frame on mobile; change contrast only. */
+@media(max-width:900px){
+  #venue .venue-note{
+    position:relative;
+    z-index:2;
+    width:calc(100% - 64px);
+    max-width:340px;
+    margin:24px auto 0;
+    padding-inline:4px;
+    color:#ead8b5;
+    overflow-wrap:normal;
+    text-wrap:balance;
+  }
+}
+
+/* Keep event copy within the inner arch on phones; improve contrast without enlarging it. */
+@media(max-width:900px){
+  #events .event-card h3,
+  #events .event-card h3[lang="hi"],
+  #events .event-card .event-note,
+  #events .event-card .event-details,
+  #events .event-card>a{
+    box-sizing:border-box;
+    margin-inline:auto;
+    text-align:center;
+    overflow-wrap:anywhere;
+  }
+  #events .event-card h3[lang="hi"]{max-width:68%;font-size:clamp(20px,5.8vw,24px);color:#390711;}
+  #events .event-card .event-note{max-width:70%;font-size:clamp(13px,3.7vw,15px);line-height:1.45;color:#38271f;font-weight:500;text-shadow:0 1px 0 #fffaf0;}
+  #events .event-card .event-details{max-width:76%;font-size:clamp(11px,3vw,12px);line-height:1.5;color:#38271f;font-weight:500;}
+  #events .event-card>a{max-width:76%;color:#704914;}
+}
+
+/* Refine the mobile venue heading and Hindi event titles without changing their size. */
+@media(max-width:760px){
+  #venue .venue-heading-first{
+    font-family:'DM Sans',sans-serif;
+    letter-spacing:.12em;
+    text-shadow:0 1px 8px #d4af6530;
+    border-image:linear-gradient(90deg,transparent,#d4af65,transparent) 1;
+  }
+  #events .event-card h3[lang="hi"]{
+    font-weight:700;
+    letter-spacing:.025em;
+    text-shadow:0 1px 0 #fff5d82e;
+  }
+  #events .event-card h3[lang="hi"]::after{
+    width:46px;
+    border-bottom-color:#d4af65;
+    opacity:.85;
+  }
+}
+
+/* Keep the earlier font choices for the venue headline and Hindi event titles. */
+#venue .venue-heading-first{font-family:'Great Vibes',cursive!important;}
+#events .event-card h3[lang="hi"]{font-family:'Noto Sans Devanagari','Noto Serif Devanagari',sans-serif;}
+
+/* Keep both procession illustrations visible beside the couple on mobile. */
+@media(max-width:760px){
+  #welcome>.welcome-phera-art{
+    display:block!important;
+    z-index:2;
+    bottom:clamp(54px,9vh,72px);
+    width:clamp(78px,24vw,112px);
+    opacity:.68;
+  }
+  #welcome>.welcome-phera-left{left:2px!important;}
+  #welcome>.welcome-phera-right{right:2px!important;}
+  #welcome .welcome-couple-art{z-index:1;}
+}
+
+/* Reposition the side Ganesha artwork higher and smaller on mobile cover. */
+@media(max-width:760px){
+  .cover-ganesha{top:44%;width:clamp(122px,calc(27vw + 20px),152px);opacity:.22;}
+  .cover-ganesha-left{left:clamp(19px,calc(6vw - 5px),27px);}
+  .cover-ganesha-right{right:clamp(4px,calc(6vw - 20px),12px);}
+}
+
+/* Refine the mobile welcome illustration group and keep its side art within the frame. */
+@media(max-width:760px){
+  #welcome .welcome-couple-art{
+    width:min(225px,calc(78vw - 40px))!important;
+    height:190px!important;
+    min-height:190px!important;
+  }
+  #welcome .welcome-couple-art>.couple-illustration{width:min(162px,100%)!important;}
+  #welcome>.welcome-phera-art{
+    left:auto;
+    right:auto;
+    width:clamp(63px,calc(24vw - 15px),97px);
+    opacity:.4;
+    filter:drop-shadow(0 3px 6px #25020b80);
+  }
+  #welcome>.welcome-phera-left{left:clamp(29px,calc(7vw + 3px),37px)!important;}
+  #welcome>.welcome-phera-right{right:clamp(29px,calc(7vw + 3px),37px)!important;}
+}
+
+@media(max-width:760px){
+  #welcome .welcome-couple-art{transform:none!important;}
+  #welcome .welcome-couple-art>.mandap-arch{transform:scale(.92);transform-origin:center;}
+  #welcome .welcome-couple-art>.couple-illustration{width:min(149px,100%)!important;}
+}
+
+@media(max-width:760px){
+  #welcome .welcome-couple-art{
+    width:min(200px,calc(78vw - 65px))!important;
+    height:165px!important;
+    min-height:165px!important;
+  }
+  #welcome .welcome-couple-art>.couple-illustration{width:min(124px,100%)!important;}
+  #welcome .welcome-couple-art>.welcome-art-butterfly{width:24px!important;}
+  #welcome>.welcome-phera-art{bottom:clamp(81px,calc(9vh + 27px),99px);width:clamp(59px,calc(24vw - 19px),93px);}
+}
+
+/* Keep the mobile footer message centered within the inner arch borders. */
+@media(max-width:760px){
+  .footer h2.footer-closing-message{
+    position:relative;
+    z-index:2;
+    width:min(100%,calc(100vw - 96px));
+    max-width:350px;
+    margin:35px auto 22px;
+    padding-inline:4px;
+    box-sizing:border-box;
+    text-align:center;
+    text-wrap:balance;
+    overflow-wrap:normal;
+  }
+}
+
+/* Desktop-only: preserve the diya divider's natural proportions and frame it with fine lines. */
+@media(min-width:761px){
+  .footer-diya-divider{
+    width:min(52vw,820px);
+    height:auto;
+    max-height:110px;
+    object-fit:contain;
+  }
+}
+
+.footer-message-accent{color:#f0cf7e;text-shadow:0 1px 10px #d4af6533;}
+
+/* The pagfera card's feather is intentionally mobile-only; hide its oversized desktop copy. */
+@media(min-width:761px){#events .event-card-peacock-feather{display:none!important}}
+
+/* Place the non-top event feathers beside the alternating shlokas, leaning toward the center. */
+@media(min-width:761px){
+  #events .journey-aside .event-wall-verse{font-size:calc(clamp(11px,.95vw,14px) + 5px)}
+  #events .event-peacock-feather-left,
+  #events .event-peacock-feather-left-mid,
+  #events .event-peacock-feather-left-lower{left:13.4%}
+  #events .event-peacock-feather-right,
+  #events .event-peacock-feather-right-mid,
+  #events .event-peacock-feather-right-lower{right:13.4%}
+}
+
+/* Desktop event rows: card, mascot, centered verse, then one feather at the outside. */
+.event-row-peacock-feather{display:none}
+@media(min-width:921px){
+  #events .event-journey{width:min(100%,1560px);max-width:1560px}
+  #events>.event-feather-layer{display:block}
+  #events .event-feather-layer .event-peacock-feather{display:none}
+  #events .event-feather-layer .event-peacock-feather-left,
+  #events .event-feather-layer .event-peacock-feather-right{display:block;width:clamp(210px,calc(18vw + 40px),370px);top:10%}
+  #events .event-feather-layer .event-peacock-feather-left{left:.5%;right:auto;transform:rotate(-4deg)}
+  #events .event-feather-layer .event-peacock-feather-right{right:.5%;left:auto;transform:scaleX(-1) rotate(-4deg)}
+  #events .journey-step .journey-aside{align-items:center;gap:clamp(12px,1.15vw,20px)}
+  #events .journey-step:nth-child(odd) .journey-aside{grid-template-columns:minmax(100px,clamp(100px,7.2vw,140px)) minmax(0,1fr) minmax(140px,clamp(140px,calc(11vw + 40px),210px))}
+  #events .journey-step:nth-child(odd) .journey-mascot{grid-column:1;grid-row:1;justify-self:center}
+  #events .journey-step:nth-child(odd) .event-wall-verse{grid-column:2;grid-row:1;margin:0;text-align:center;white-space:pre}
+  #events .journey-step:nth-child(odd) .event-row-peacock-feather{grid-column:3;grid-row:1}
+  #events .journey-step:nth-child(even) .journey-aside{grid-template-columns:minmax(140px,clamp(140px,calc(11vw + 40px),210px)) minmax(0,1fr) minmax(100px,clamp(100px,7.2vw,140px))}
+  #events .journey-step:nth-child(even) .event-row-peacock-feather{grid-column:1;grid-row:1}
+  #events .journey-step:nth-child(even) .event-wall-verse{grid-column:2;grid-row:1;margin:0;text-align:center;white-space:pre}
+  #events .journey-step:nth-child(even) .journey-mascot{grid-column:3;grid-row:1;justify-self:center}
+  #events .journey-aside .event-wall-verse{font-size:calc(clamp(11px,.95vw,14px) + 5px);line-height:1.65}
+  #events .event-row-peacock-feather{display:block;width:100%;max-width:clamp(140px,calc(11vw + 40px),210px);max-height:250px;height:auto;object-fit:contain;align-self:center;justify-self:center;opacity:.92;pointer-events:none}
+  #events .journey-step.pagfera-step .event-row-peacock-feather{transform:scaleX(-1)}
+}
+
+/* On narrower desktop screens, give the card its own row and the illustration,
+   full-size two-line mantra, and feather a separate row with generous columns. */
+@media(min-width:761px) and (max-width:1499px){
+  #events .event-journey{width:min(100%,1480px);max-width:1480px}
+  #events .journey-step{grid-template-columns:minmax(0,1fr) 78px minmax(0,1fr);column-gap:0;row-gap:clamp(18px,2vw,32px);align-items:center}
+  #events .journey-step>.journey-node{grid-column:2;grid-row:1;align-self:center}
+  #events .journey-step>.event-card{grid-row:1!important;width:min(100%,430px)!important;margin:0}
+  #events .journey-step>.journey-aside{grid-column:1/-1!important;grid-row:2!important;display:grid!important;grid-template-columns:minmax(100px,140px) minmax(0,1fr) minmax(140px,210px)!important;align-items:center;gap:clamp(16px,2vw,30px);width:100%;max-width:none;margin:0 0 24px;padding-inline:clamp(0px,2vw,24px)}
+  #events .journey-step .journey-mascot{grid-column:1;grid-row:1;width:100%;max-width:130px;min-height:150px;justify-self:center}
+  #events .journey-step .event-wall-verse{grid-column:2;grid-row:1;width:100%;margin:0;text-align:center;white-space:pre;font-size:calc(clamp(11px,.95vw,14px) + 5px);line-height:1.65}
+  #events .journey-step .event-row-peacock-feather{grid-column:3;grid-row:1;display:block;width:100%;max-width:clamp(140px,calc(11vw + 40px),210px);max-height:250px;height:auto;object-fit:contain;align-self:center;justify-self:center;opacity:.92;pointer-events:none}
+  #events .journey-step.pagfera-step .event-row-peacock-feather{transform:scaleX(-1)}
+  #events .journey-step .event-card::after{display:none}
+  #events>.event-feather-layer .event-peacock-feather-left-mid,
+  #events>.event-feather-layer .event-peacock-feather-left-lower,
+  #events>.event-feather-layer .event-peacock-feather-right-mid,
+  #events>.event-feather-layer .event-peacock-feather-right-lower{display:none!important}
+}
+
+@media(min-width:761px) and (max-width:900px){
+  #events .journey-step{grid-template-columns:58px minmax(0,1fr)}
+  #events .journey-step>.journey-node{grid-column:1;grid-row:1}
+  #events .journey-step>.event-card{grid-column:2!important}
+  #events .journey-step>.journey-aside{grid-column:1/-1!important}
+}
+
+/* Keep the wedding feather, mantra, and illustration in a clear, aligned row. */
+@media(min-width:921px){
+  #events .journey-step:nth-child(4) .journey-aside.engraving-wedding{grid-template-columns:minmax(190px,200px) minmax(0,1fr) minmax(120px,132px)!important;gap:clamp(24px,2vw,32px)!important;}
+  #events .journey-step:nth-child(4) .event-row-peacock-feather{justify-self:start;margin-left:-100px;}
+  #events .journey-step:nth-child(4) .event-wall-verse{position:static;top:auto;align-self:center;margin:0;text-align:center;white-space:pre;transform:translate(-150px,20px);}
+  #events .journey-step:nth-child(4) .journey-mascot{align-self:center;justify-self:center;}
+}
+
+@media(min-width:761px){
+  #events .event-journey{margin-top:154px}
+}
+
+@media(min-width:921px){
+  #events .journey-step:first-child .event-row-peacock-feather{position:relative;top:-6px;transform:rotate(-5deg) scaleX(-1);justify-self:end;margin-right:-73px}
+  #events>.event-feather-layer{z-index:3}
+  #events>.event-feather-layer .event-peacock-feather-left,
+  #events>.event-feather-layer .event-peacock-feather-right{z-index:4}
+  #events>.event-feather-layer .event-peacock-feather-left{left:calc(.5% + 100px);right:auto}
+  #events>.event-feather-layer .event-peacock-feather-right{right:calc(.5% + 100px);left:auto}
+}
+
+/* The Haldi row already has the two frame feathers on desktop; remove its oversized extra copy. */
+@media(min-width:761px){
+  #events .haldi-step>.haldi-card-peacock-feather{display:none!important;}
+}
+
+/* Keep the desktop footer label clear of the arched mantra and enlarge its side feathers. */
+@media(min-width:761px){
+  .footer{padding-top:65px}
+  .footer>svg.footer-mantra{transform:translateY(-16px)}
+  .footer-flourish{margin:24px 0}
+  .footer h2.footer-closing-message{margin:45px 0 10px}
+  .footer-peacock-feather{width:calc(clamp(100px,10vw,150px) + 100px)}
+  .footer-peacock-feather{top:calc(47% - 90px)}
+  .footer-peacock-left{left:calc(4% + 200px)}
+  .footer-peacock-right{right:calc(4% + 200px)}
+}
+
+/* Card 2 desktop adjustments: keep the mantra left and move its feather outward. */
+@media(min-width:1500px){
+  #events .journey-step:nth-child(2) .event-row-peacock-feather{justify-self:start;margin-left:-106px}
+  #events .journey-step:nth-child(2) .event-wall-verse{transform:translateX(-145px)}
+}
+@media(min-width:921px) and (max-width:1499px){
+  #events .journey-step:nth-child(2) .event-row-peacock-feather{justify-self:end;margin-right:-106px}
+  #events .journey-step:nth-child(2) .event-wall-verse{transform:translateX(-145px)}
+}
+
+
+/* Card 5 desktop feather: mirror it and move it outward to the right. */
+@media(min-width:921px){
+  #events .journey-step:nth-child(5) .event-row-peacock-feather{transform:scaleX(-1);justify-self:end;margin-right:-104px}
+}
+/* Card 3 desktop feather: mirror it and move it outward to the right. */
+@media(min-width:921px){
+  #events .journey-step:nth-child(3) .event-row-peacock-feather{transform:scaleX(-1);justify-self:end;margin-right:-104px}
+}
+
+/* Turn the venue section's white copy gold on desktop only. */
+@media(min-width:921px){
+  #venue .venue-heading-first,
+  #venue .venue-welcome,
+  #venue .venue-card h3{color:#d4af65}
+}
+
+/* Refine the venue copy to a warm, polished antique-gold finish on desktop. */
+@media(min-width:921px){
+  #venue .venue-heading-first,
+  #venue .venue-welcome,
+  #venue .venue-card h3{
+    color:#c5a15f;
+    background-image:linear-gradient(100deg,#c39a52 0%,#efd99f 42%,#bd9148 72%,#e4ca8d 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 1px 0 #f6e3b028);
+  }
+}
+
+/* Keep the desktop welcome sentence inside the visible venue frame. */
+@media(min-width:921px){
+  #venue .venue-welcome{
+    width:min(100%,calc(100vw - 64px));
+    max-width:1040px;
+    margin-inline:auto;
+    overflow-wrap:anywhere;
+  }
+  #venue .venue-magic{
+    font-family:'Great Vibes',cursive;
+    font-size:1.18em;
+    font-style:normal;
+    letter-spacing:.02em;
+  }
+  #venue .venue-heading-first{
+    display:inline-block;
+    position:relative;
+    left:0;
+    transform:translateX(-16px);
+    padding-right:8px;
+    overflow:visible;
+    padding-top:6px;
+    line-height:1.05;
+  }
+  #venue .venue-note{
+    color:#e6c87f;
+    font-size:18px;
+  }
+  #venue .venue-peacock-left{left:max(25px,calc((100% - 1760px)/2 + 13px));}
+  #venue .venue-peacock-right{right:max(25px,calc((100% - 1760px)/2 + 13px));}
+}
+
+
+
+
+
+
+
+
+
+
+/* Keep the closing message comfortably inside the arch on phones. */
+@media(max-width:760px){
+  .footer h2.footer-closing-message{
+    width:min(100%,calc(100vw - 96px));
+    max-width:290px;
+    margin:26px auto 18px;
+    padding-inline:0;
+    font-size:clamp(16px,4.5vw,18px);
+    line-height:1.25;
+    text-wrap:balance;
+  }
+}
+
+
+
+
+/* Mobile venue: place the smaller feathers as side accents and keep Join copy inside the frame. */
+@media(max-width:760px){
+  #venue .venue-peacock-lower-left,
+  #venue .venue-peacock-lower-right{
+    top:58%;
+    bottom:auto;
+    width:clamp(42px,12vw,54px);
+    max-height:110px;
+    opacity:.46;
+  }
+  #venue .venue-peacock-lower-left{left:14%;transform:rotate(-40deg)}
+  #venue .venue-peacock-lower-right{right:14%;transform:scaleX(-1) rotate(-40deg)}
+  #venue .venue-welcome{
+    position:relative;
+    z-index:2;
+    width:min(100%,clamp(190px,63vw,300px));
+    margin:12px auto 18px;
+    padding:7px 8px;
+    border-radius:10px;
+    background:#4a0715e8;
+    font-size:clamp(12.5px,3.4vw,15px);
+    line-height:1.4;
+    text-wrap:balance;
+  }
+}
+
+/* Mobile venue refinement: contain Join copy and size the side feathers to the card. */
+@media(max-width:760px){
+  #venue .venue-peacock-lower-left,
+  #venue .venue-peacock-lower-right{
+    top:calc(50% + 54px);
+    bottom:auto;
+    width:clamp(98px,calc(18vw + 30px),112px);max-height:220px;
+    opacity:.58;
+  }
+  #venue .venue-peacock-lower-left{left:calc(3% - 10px);transform:rotate(-30deg)}
+  #venue .venue-peacock-lower-right{right:calc(3% - 10px);transform:scaleX(-1) rotate(-30deg)}
+  #venue .venue-welcome{
+    position:relative;
+    z-index:2;
+    width:min(100%,clamp(190px,60vw,270px));
+    max-width:270px;
+    margin:8px auto 18px;
+    padding:0 4px;
+    border-radius:0;
+    background:none;
+    font-size:clamp(12px,3.5vw,15px);
+    line-height:1.45;
+    text-wrap:balance;
+    overflow-wrap:normal;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

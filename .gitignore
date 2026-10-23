@@ -1,0 +1,9 @@
+target/
+.tools/
+data/
+node_modules/
+dist/
+.env
+uploads/
+.idea/
+*.iml
